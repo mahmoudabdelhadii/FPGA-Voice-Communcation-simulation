@@ -1,0 +1,13 @@
+	component RSdecoder is
+		port (
+			clk_clk         : in  std_logic                     := 'X';             -- clk
+			in_valid        : in  std_logic                     := 'X';             -- valid
+			in_symbols_in   : in  std_logic_vector(79 downto 0) := (others => 'X'); -- symbols_in
+			out_valid       : out std_logic;                                        -- valid
+			out_errors_out  : out std_logic_vector(4 downto 0);                     -- errors_out
+			out_decfail     : out std_logic_vector(0 downto 0);                     -- decfail
+			out_symbols_out : out std_logic_vector(79 downto 0);                    -- symbols_out
+			reset_reset_n   : in  std_logic                     := 'X'              -- reset_n
+		);
+	end component RSdecoder;
+

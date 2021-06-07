@@ -1,0 +1,125 @@
+set_global_assignment -entity "RSdecoder" -library "RSdecoder" -name IP_TOOL_NAME "Qsys"
+set_global_assignment -entity "RSdecoder" -library "RSdecoder" -name IP_TOOL_VERSION "16.1"
+set_global_assignment -entity "RSdecoder" -library "RSdecoder" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -library "RSdecoder" -name SOPCINFO_FILE [file join $::quartus(qip_path) "../../RSdecoder.sopcinfo"]
+set_global_assignment -entity "RSdecoder" -library "RSdecoder" -name SLD_INFO "QSYS_NAME RSdecoder HAS_SOPCINFO 1 GENERATION_ID 1622473377"
+set_global_assignment -library "RSdecoder" -name MISC_FILE [file join $::quartus(qip_path) "../RSdecoder.cmp"]
+set_global_assignment -library "RSdecoder" -name SLD_FILE [file join $::quartus(qip_path) "RSdecoder.debuginfo"]
+set_global_assignment -entity "RSdecoder" -library "RSdecoder" -name IP_TARGETED_DEVICE_FAMILY "Cyclone V"
+set_global_assignment -entity "RSdecoder" -library "RSdecoder" -name IP_GENERATED_DEVICE_FAMILY "{Cyclone V}"
+set_global_assignment -entity "RSdecoder" -library "RSdecoder" -name IP_QSYS_MODE "STANDALONE"
+set_global_assignment -name SYNTHESIS_ONLY_QIP ON
+set_global_assignment -library "RSdecoder" -name MISC_FILE [file join $::quartus(qip_path) "../../RSdecoder.qsys"]
+set_global_assignment -entity "RSdecoder" -library "RSdecoder" -name IP_COMPONENT_NAME "UlNkZWNvZGVy"
+set_global_assignment -entity "RSdecoder" -library "RSdecoder" -name IP_COMPONENT_DISPLAY_NAME "UlNkZWNvZGVy"
+set_global_assignment -entity "RSdecoder" -library "RSdecoder" -name IP_COMPONENT_REPORT_HIERARCHY "On"
+set_global_assignment -entity "RSdecoder" -library "RSdecoder" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "RSdecoder" -library "RSdecoder" -name IP_COMPONENT_VERSION "MS4w"
+set_global_assignment -entity "RSdecoder" -library "RSdecoder" -name IP_COMPONENT_PARAMETER "QVVUT19HRU5FUkFUSU9OX0lE::MTYyMjQ3MzM3Nw==::QXV0byBHRU5FUkFUSU9OX0lE"
+set_global_assignment -entity "RSdecoder" -library "RSdecoder" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0VfRkFNSUxZ::Q3ljbG9uZSBW::QXV0byBERVZJQ0VfRkFNSUxZ"
+set_global_assignment -entity "RSdecoder" -library "RSdecoder" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0U=::NUNTRU1BNUYzMUM2::QXV0byBERVZJQ0U="
+set_global_assignment -entity "RSdecoder" -library "RSdecoder" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0VfU1BFRURHUkFERQ==::Ng==::QXV0byBERVZJQ0VfU1BFRURHUkFERQ=="
+set_global_assignment -entity "RSdecoder" -library "RSdecoder" -name IP_COMPONENT_PARAMETER "QVVUT19DTEtfQ0xPQ0tfUkFURQ==::LTE=::QXV0byBDTE9DS19SQVRF"
+set_global_assignment -entity "RSdecoder" -library "RSdecoder" -name IP_COMPONENT_PARAMETER "QVVUT19DTEtfQ0xPQ0tfRE9NQUlO::LTE=::QXV0byBDTE9DS19ET01BSU4="
+set_global_assignment -entity "RSdecoder" -library "RSdecoder" -name IP_COMPONENT_PARAMETER "QVVUT19DTEtfUkVTRVRfRE9NQUlO::LTE=::QXV0byBSRVNFVF9ET01BSU4="
+set_global_assignment -entity "RSdecoder_highspeed_rs_0" -library "RSdecoder" -name IP_COMPONENT_NAME "UlNkZWNvZGVyX2hpZ2hzcGVlZF9yc18w"
+set_global_assignment -entity "RSdecoder_highspeed_rs_0" -library "RSdecoder" -name IP_COMPONENT_DISPLAY_NAME "SGlnaC1TcGVlZCBSZWVkLVNvbG9tb24="
+set_global_assignment -entity "RSdecoder_highspeed_rs_0" -library "RSdecoder" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "RSdecoder_highspeed_rs_0" -library "RSdecoder" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "RSdecoder_highspeed_rs_0" -library "RSdecoder" -name IP_COMPONENT_AUTHOR "QWx0ZXJhIENvcnBvcmF0aW9u"
+set_global_assignment -entity "RSdecoder_highspeed_rs_0" -library "RSdecoder" -name IP_COMPONENT_VERSION "MTYuMQ=="
+set_global_assignment -entity "RSdecoder_highspeed_rs_0" -library "RSdecoder" -name IP_COMPONENT_DESCRIPTION "QWx0ZXJhIEhpZ2gtU3BlZWQgUmVlZC1Tb2xvbW9u"
+set_global_assignment -entity "RSdecoder_highspeed_rs_0" -library "RSdecoder" -name IP_COMPONENT_PARAMETER "ZGVzaWduX2Vudg==::TkFUSVZF::ZGVzaWduX2Vudg=="
+set_global_assignment -entity "RSdecoder_highspeed_rs_0" -library "RSdecoder" -name IP_COMPONENT_PARAMETER "UlNERVNJR04=::MA==::UmVlZC1Tb2xvbW9uIGNvcmU="
+set_global_assignment -entity "RSdecoder_highspeed_rs_0" -library "RSdecoder" -name IP_COMPONENT_PARAMETER "UlM=::RGVjb2Rlcg==::UmVlZC1Tb2xvbW9uIG1vZHVsZQ=="
+set_global_assignment -entity "RSdecoder_highspeed_rs_0" -library "RSdecoder" -name IP_COMPONENT_PARAMETER "Q0hBTk5FTA==::MQ==::TnVtYmVyIG9mIGNoYW5uZWxz"
+set_global_assignment -entity "RSdecoder_highspeed_rs_0" -library "RSdecoder" -name IP_COMPONENT_PARAMETER "VFdPX0NIQU5ORUxT::MQ==::VXNlIDIgeCA1MEcgRXRoZXJuZXQ="
+set_global_assignment -entity "RSdecoder_highspeed_rs_0" -library "RSdecoder" -name IP_COMPONENT_PARAMETER "Rk9VUl9DSEFOTkVMUw==::MQ==::VXNlIDQgeCAyNUcgRXRoZXJuZXQ="
+set_global_assignment -entity "RSdecoder_highspeed_rs_0" -library "RSdecoder" -name IP_COMPONENT_PARAMETER "QklUU1BFUlNZTUJPTA==::OA==::TnVtYmVyIG9mIGJpdHMgcGVyIHN5bWJvbA=="
+set_global_assignment -entity "RSdecoder_highspeed_rs_0" -library "RSdecoder" -name IP_COMPONENT_PARAMETER "Tg==::MjU1::TnVtYmVyIG9mIHN5bWJvbHMgcGVyIGNvZGV3b3Jk"
+set_global_assignment -entity "RSdecoder_highspeed_rs_0" -library "RSdecoder" -name IP_COMPONENT_PARAMETER "Sw==::MjIz::TnVtYmVyIG9mIGRhdGEgc3ltYm9scyBwZXIgY29kZXdvcmQ="
+set_global_assignment -entity "RSdecoder_highspeed_rs_0" -library "RSdecoder" -name IP_COMPONENT_PARAMETER "SVJSUE9M::Mjg1::RmllbGQgcG9seW5vbWlhbA=="
+set_global_assignment -entity "RSdecoder_highspeed_rs_0" -library "RSdecoder" -name IP_COMPONENT_PARAMETER "UEFS::MTA=::UGFyYWxsZWxpc20="
+set_global_assignment -entity "RSdecoder_highspeed_rs_0" -library "RSdecoder" -name IP_COMPONENT_PARAMETER "Qk1TUEVFRA==::MQ==::TGF0ZW5jeQ=="
+set_global_assignment -entity "RSdecoder_highspeed_rs_0" -library "RSdecoder" -name IP_COMPONENT_PARAMETER "VVNFUkFN::MQ==::RmF2b3IgUk9NIHVzYWdl"
+set_global_assignment -entity "RSdecoder_highspeed_rs_0" -library "RSdecoder" -name IP_COMPONENT_PARAMETER "VVNFVFJVRURVQUxSQU0=::MQ==::VXNlIHRydWUgZHVhbCBwb3J0"
+set_global_assignment -entity "RSdecoder_highspeed_rs_0" -library "RSdecoder" -name IP_COMPONENT_PARAMETER "VVNFRUNDRk9SUkFN::MA==::UmVmcmVzaCBST00gY29udGVudA=="
+set_global_assignment -entity "RSdecoder_highspeed_rs_0" -library "RSdecoder" -name IP_COMPONENT_PARAMETER "VVNFX0JLUA==::MA==::VXNlIGJhY2twcmVzc3VyZQ=="
+set_global_assignment -entity "RSdecoder_highspeed_rs_0" -library "RSdecoder" -name IP_COMPONENT_PARAMETER "VVNFX0JZUEFTUw==::MA==::QWxsb3cgYnktcGFzcyBtb2Rl"
+set_global_assignment -entity "RSdecoder_highspeed_rs_0" -library "RSdecoder" -name IP_COMPONENT_PARAMETER "VVNFX1NPUEVPUA==::MA==::T3V0cHV0IHN0YXJ0IGFuZCBlbmQgb2YgcGFja2V0"
+set_global_assignment -entity "RSdecoder_highspeed_rs_0" -library "RSdecoder" -name IP_COMPONENT_PARAMETER "VVNFX0RFQ0ZBSUw=::MQ==::T3V0cHV0IERlY29kaW5nIGZhaWx1cmU="
+set_global_assignment -entity "RSdecoder_highspeed_rs_0" -library "RSdecoder" -name IP_COMPONENT_PARAMETER "VVNFX05CRVJST1I=::MQ==::T3V0cHV0IEVycm9yIHN5bWJvbCBjb3VudA=="
+set_global_assignment -entity "RSdecoder_highspeed_rs_0" -library "RSdecoder" -name IP_COMPONENT_PARAMETER "VVNFX0VSUk9SVkFMVUU=::MA==::T3V0cHV0IEVycm9yIHN5bWJvbCB2YWx1ZXM="
+set_global_assignment -entity "RSdecoder_highspeed_rs_0" -library "RSdecoder" -name IP_COMPONENT_PARAMETER "c2VsZWN0ZWRfZGV2aWNlX2ZhbWlseQ==::Q3ljbG9uZSBW::c2VsZWN0ZWRfZGV2aWNlX2ZhbWlseQ=="
+set_global_assignment -entity "RSdecoder_highspeed_rs_0" -library "RSdecoder" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0U=::NUNTRU1BNUYzMUM2::QXV0byBERVZJQ0U="
+set_global_assignment -entity "RSdecoder_highspeed_rs_0" -library "RSdecoder" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0VfU1BFRURHUkFERQ==::Ng==::QXV0byBERVZJQ0VfU1BFRURHUkFERQ=="
+set_global_assignment -entity "rsx_decoder" -library "RSdecoder" -name IP_COMPONENT_NAME "cnN4X2RlY29kZXI="
+set_global_assignment -entity "rsx_decoder" -library "RSdecoder" -name IP_COMPONENT_DISPLAY_NAME "SGlnaC1TcGVlZCBSZWVkLVNvbG9tb24gRGVjb2Rlcg=="
+set_global_assignment -entity "rsx_decoder" -library "RSdecoder" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "rsx_decoder" -library "RSdecoder" -name IP_COMPONENT_INTERNAL "On"
+set_global_assignment -entity "rsx_decoder" -library "RSdecoder" -name IP_COMPONENT_AUTHOR "QWx0ZXJhIENvcnBvcmF0aW9u"
+set_global_assignment -entity "rsx_decoder" -library "RSdecoder" -name IP_COMPONENT_VERSION "MTYuMQ=="
+set_global_assignment -entity "rsx_decoder" -library "RSdecoder" -name IP_COMPONENT_DESCRIPTION "QWx0ZXJhIEhpZ2gtU3BlZWQgUmVlZC1Tb2xvbW9uIERlY29kZXI="
+set_global_assignment -entity "rsx_decoder" -library "RSdecoder" -name IP_COMPONENT_PARAMETER "ZGVzaWduX2Vudg==::TkFUSVZF::ZGVzaWduX2Vudg=="
+set_global_assignment -entity "rsx_decoder" -library "RSdecoder" -name IP_COMPONENT_PARAMETER "QklUU1BFUlNZTUJPTA==::OA==::TnVtYmVyIG9mIGJpdHMgcGVyIHN5bWJvbA=="
+set_global_assignment -entity "rsx_decoder" -library "RSdecoder" -name IP_COMPONENT_PARAMETER "Q0hBTk5FTA==::MQ==::TnVtYmVyIG9mIGNoYW5uZWxz"
+set_global_assignment -entity "rsx_decoder" -library "RSdecoder" -name IP_COMPONENT_PARAMETER "Tg==::MjU1::TnVtYmVyIG9mIHN5bWJvbHMgcGVyIGNvZGV3b3Jk"
+set_global_assignment -entity "rsx_decoder" -library "RSdecoder" -name IP_COMPONENT_PARAMETER "Q0hFQ0s=::MzI=::TnVtYmVyIG9mIHBhcml0eSBzeW1ib2xzIHBlciBjb2Rld29yZA=="
+set_global_assignment -entity "rsx_decoder" -library "RSdecoder" -name IP_COMPONENT_PARAMETER "SVJSUE9M::Mjg1::RmllbGQgcG9seW5vbWlhbA=="
+set_global_assignment -entity "rsx_decoder" -library "RSdecoder" -name IP_COMPONENT_PARAMETER "UEFS::MTA=::UGFyYWxsZWxpc20="
+set_global_assignment -entity "rsx_decoder" -library "RSdecoder" -name IP_COMPONENT_PARAMETER "Qk1TUEVFRA==::MQ==::TGF0ZW5jeQ=="
+set_global_assignment -entity "rsx_decoder" -library "RSdecoder" -name IP_COMPONENT_PARAMETER "VVNFUkFN::MQ==::RmF2b3IgUk9NIHVzYWdl"
+set_global_assignment -entity "rsx_decoder" -library "RSdecoder" -name IP_COMPONENT_PARAMETER "VVNFVFJVRURVQUxSQU0=::MQ==::VXNlIHRydWUgZHVhbCBwb3J0"
+set_global_assignment -entity "rsx_decoder" -library "RSdecoder" -name IP_COMPONENT_PARAMETER "VVNFRUNDRk9SUkFN::MA==::UmVmcmVzaCBST00gY29udGVudA=="
+set_global_assignment -entity "rsx_decoder" -library "RSdecoder" -name IP_COMPONENT_PARAMETER "VVNFX0JLUA==::MA==::VXNlIGJhY2twcmVzc3VyZQ=="
+set_global_assignment -entity "rsx_decoder" -library "RSdecoder" -name IP_COMPONENT_PARAMETER "VVNFX0JZUEFTUw==::MA==::QWxsb3cgYnktcGFzcyBtb2Rl"
+set_global_assignment -entity "rsx_decoder" -library "RSdecoder" -name IP_COMPONENT_PARAMETER "VVNFX1NPUEVPUA==::MA==::T3V0cHV0IHN0YXJ0IGFuZCBlbmQgb2YgcGFja2V0"
+set_global_assignment -entity "rsx_decoder" -library "RSdecoder" -name IP_COMPONENT_PARAMETER "VVNFX0RFQ0ZBSUw=::MQ==::T3V0cHV0IERlY29kaW5nIGZhaWx1cmU="
+set_global_assignment -entity "rsx_decoder" -library "RSdecoder" -name IP_COMPONENT_PARAMETER "VVNFX05CRVJST1I=::MQ==::T3V0cHV0IEVycm9yIHN5bWJvbCBjb3VudA=="
+set_global_assignment -entity "rsx_decoder" -library "RSdecoder" -name IP_COMPONENT_PARAMETER "VVNFX0VSUk9SVkFMVUU=::MA==::T3V0cHV0IEVycm9yIHN5bWJvbCB2YWx1ZXM="
+set_global_assignment -entity "rsx_decoder" -library "RSdecoder" -name IP_COMPONENT_PARAMETER "c2VsZWN0ZWRfZGV2aWNlX2ZhbWlseQ==::Q3ljbG9uZSBW::c2VsZWN0ZWRfZGV2aWNlX2ZhbWlseQ=="
+
+set_global_assignment -library "RSdecoder" -name VERILOG_FILE [file join $::quartus(qip_path) "RSdecoder.v"]
+set_global_assignment -library "RSdecoder" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/RSdecoder_highspeed_rs_0.v"]
+set_global_assignment -library "RSdecoder" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/rsx_decoder_rom_inverse.hex"]
+set_global_assignment -library "RSdecoder" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/rsx_parameters_auto.vhd"]
+set_global_assignment -library "RSdecoder" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/rsx_functions.vhd"]
+set_global_assignment -library "RSdecoder" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/rsx_package.vhd"]
+set_global_assignment -library "RSdecoder" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/rsx_roots_auto.vhd"]
+set_global_assignment -library "RSdecoder" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/rsx_bm_auto.vhd"]
+set_global_assignment -library "RSdecoder" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/rsx_inverse_ROM_bkp.vhd"]
+set_global_assignment -library "RSdecoder" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/rsx_inverse_ROM_auto.vhd"]
+set_global_assignment -library "RSdecoder" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/rsp_gf_add.vhd"]
+set_global_assignment -library "RSdecoder" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/rsp_gf_mr.vhd"]
+set_global_assignment -library "RSdecoder" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/rsp_gf_mul.vhd"]
+set_global_assignment -library "RSdecoder" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/rsp_gf_mulx.vhd"]
+set_global_assignment -library "RSdecoder" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/rsp_gf_pp.vhd"]
+set_global_assignment -library "RSdecoder" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/rsp_unary.vhd"]
+set_global_assignment -library "RSdecoder" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/rsx_bm_fifo.vhd"]
+set_global_assignment -library "RSdecoder" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/rsx_bm_pe1.vhd"]
+set_global_assignment -library "RSdecoder" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/rsx_bm_pe2.vhd"]
+set_global_assignment -library "RSdecoder" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/rsx_bm_pe4.vhd"]
+set_global_assignment -library "RSdecoder" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/rsx_bm_pe6.vhd"]
+set_global_assignment -library "RSdecoder" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/rsx_count_errors.vhd"]
+set_global_assignment -library "RSdecoder" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/rsx_decoder.vhd"]
+set_global_assignment -library "RSdecoder" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/rsx_error_dot.vhd"]
+set_global_assignment -library "RSdecoder" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/rsx_fifo.vhd"]
+set_global_assignment -library "RSdecoder" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/rsx_fit_counter.vhd"]
+set_global_assignment -library "RSdecoder" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/rsx_gf_inv.vhd"]
+set_global_assignment -library "RSdecoder" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/rsx_omega_pipe.vhd"]
+set_global_assignment -library "RSdecoder" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/rsx_omega_vecpipe.vhd"]
+set_global_assignment -library "RSdecoder" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/rsx_poly_dot.vhd"]
+set_global_assignment -library "RSdecoder" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/rsx_search.vhd"]
+set_global_assignment -library "RSdecoder" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/rsx_searches.vhd"]
+set_global_assignment -library "RSdecoder" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/rsx_searcheslast.vhd"]
+set_global_assignment -library "RSdecoder" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/rsx_syndrome.vhd"]
+set_global_assignment -library "RSdecoder" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/rsx_syndrome_poly.vhd"]
+set_global_assignment -library "RSdecoder" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/rsx_syndrome_zero.vhd"]
+set_global_assignment -library "RSdecoder" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/rsp_gf_add.ocp"]
+
+set_global_assignment -entity "RSdecoder_highspeed_rs_0" -library "RSdecoder" -name IP_TOOL_NAME "altera_highspeed_rs"
+set_global_assignment -entity "RSdecoder_highspeed_rs_0" -library "RSdecoder" -name IP_TOOL_VERSION "16.1"
+set_global_assignment -entity "RSdecoder_highspeed_rs_0" -library "RSdecoder" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "rsx_decoder" -library "RSdecoder" -name IP_TOOL_NAME "altera_highspeed_rs_dec"
+set_global_assignment -entity "rsx_decoder" -library "RSdecoder" -name IP_TOOL_VERSION "16.1"
+set_global_assignment -entity "rsx_decoder" -library "RSdecoder" -name IP_TOOL_ENV "Qsys"

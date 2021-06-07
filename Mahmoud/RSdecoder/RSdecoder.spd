@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="simulation/submodules/rsx_decoder_rom_inverse.hex"
+   type="HEX"
+   library="decoder" />
+ <file
+   path="simulation/submodules/rsx_parameters_auto.vhd"
+   type="VHDL"
+   library="decoder" />
+ <file
+   path="simulation/submodules/mentor/rsx_functions.vhd"
+   type="VHDL_ENCRYPT"
+   library="decoder"
+   simulator="modelsim" />
+ <file
+   path="simulation/submodules/aldec/rsx_functions.vhd"
+   type="VHDL_ENCRYPT"
+   library="decoder"
+   simulator="riviera" />
+ <file
+   path="simulation/submodules/mentor/rsx_package.vhd"
+   type="VHDL_ENCRYPT"
+   library="decoder"
+   simulator="modelsim" />
+ <file
+   path="simulation/submodules/aldec/rsx_package.vhd"
+   type="VHDL_ENCRYPT"
+   library="decoder"
+   simulator="riviera" />
+ <file
+   path="simulation/submodules/rsx_roots_auto.vhd"
+   type="VHDL"
+   library="decoder" />
+ <file
+   path="simulation/submodules/rsx_bm_auto.vhd"
+   type="VHDL"
+   library="decoder" />
+ <file
+   path="simulation/submodules/mentor/rsx_inverse_ROM_bkp.vhd"
+   type="VHDL_ENCRYPT"
+   library="decoder"
+   simulator="modelsim" />
+ <file
+   path="simulation/submodules/aldec/rsx_inverse_ROM_bkp.vhd"
+   type="VHDL_ENCRYPT"
+   library="decoder"
+   simulator="riviera" />
+ <file
+   path="simulation/submodules/rsx_inverse_ROM_auto.vhd"
+   type="VHDL"
+   library="decoder" />
+ <file
+   path="simulation/submodules/mentor/rsp_gf_add.vhd"
+   type="VHDL_ENCRYPT"
+   library="decoder"
+   simulator="modelsim" />
+ <file
+   path="simulation/submodules/aldec/rsp_gf_add.vhd"
+   type="VHDL_ENCRYPT"
+   library="decoder"
+   simulator="riviera" />
+ <file
+   path="simulation/submodules/mentor/rsp_gf_mr.vhd"
+   type="VHDL_ENCRYPT"
+   library="decoder"
+   simulator="modelsim" />
+ <file
+   path="simulation/submodules/aldec/rsp_gf_mr.vhd"
+   type="VHDL_ENCRYPT"
+   library="decoder"
+   simulator="riviera" />
+ <file
+   path="simulation/submodules/mentor/rsp_gf_mul.vhd"
+   type="VHDL_ENCRYPT"
+   library="decoder"
+   simulator="modelsim" />
+ <file
+   path="simulation/submodules/aldec/rsp_gf_mul.vhd"
+   type="VHDL_ENCRYPT"
+   library="decoder"
+   simulator="riviera" />
+ <file
+   path="simulation/submodules/mentor/rsp_gf_mulx.vhd"
+   type="VHDL_ENCRYPT"
+   library="decoder"
+   simulator="modelsim" />
+ <file
+   path="simulation/submodules/aldec/rsp_gf_mulx.vhd"
+   type="VHDL_ENCRYPT"
+   library="decoder"
+   simulator="riviera" />
+ <file
+   path="simulation/submodules/mentor/rsp_gf_pp.vhd"
+   type="VHDL_ENCRYPT"
+   library="decoder"
+   simulator="modelsim" />
+ <file
+   path="simulation/submodules/aldec/rsp_gf_pp.vhd"
+   type="VHDL_ENCRYPT"
+   library="decoder"
+   simulator="riviera" />
+ <file
+   path="simulation/submodules/mentor/rsp_unary.vhd"
+   type="VHDL_ENCRYPT"
+   library="decoder"
+   simulator="modelsim" />
+ <file
+   path="simulation/submodules/aldec/rsp_unary.vhd"
+   type="VHDL_ENCRYPT"
+   library="decoder"
+   simulator="riviera" />
+ <file
+   path="simulation/submodules/mentor/rsx_bm_fifo.vhd"
+   type="VHDL_ENCRYPT"
+   library="decoder"
+   simulator="modelsim" />
+ <file
+   path="simulation/submodules/aldec/rsx_bm_fifo.vhd"
+   type="VHDL_ENCRYPT"
+   library="decoder"
+   simulator="riviera" />
+ <file
+   path="simulation/submodules/mentor/rsx_bm_pe1.vhd"
+   type="VHDL_ENCRYPT"
+   library="decoder"
+   simulator="modelsim" />
+ <file
+   path="simulation/submodules/aldec/rsx_bm_pe1.vhd"
+   type="VHDL_ENCRYPT"
+   library="decoder"
+   simulator="riviera" />
+ <file
+   path="simulation/submodules/mentor/rsx_bm_pe2.vhd"
+   type="VHDL_ENCRYPT"
+   library="decoder"
+   simulator="modelsim" />
+ <file
+   path="simulation/submodules/aldec/rsx_bm_pe2.vhd"
+   type="VHDL_ENCRYPT"
+   library="decoder"
+   simulator="riviera" />
+ <file
+   path="simulation/submodules/mentor/rsx_bm_pe4.vhd"
+   type="VHDL_ENCRYPT"
+   library="decoder"
+   simulator="modelsim" />
+ <file
+   path="simulation/submodules/aldec/rsx_bm_pe4.vhd"
+   type="VHDL_ENCRYPT"
+   library="decoder"
+   simulator="riviera" />
+ <file
+   path="simulation/submodules/mentor/rsx_bm_pe6.vhd"
+   type="VHDL_ENCRYPT"
+   library="decoder"
+   simulator="modelsim" />
+ <file
+   path="simulation/submodules/aldec/rsx_bm_pe6.vhd"
+   type="VHDL_ENCRYPT"
+   library="decoder"
+   simulator="riviera" />
+ <file
+   path="simulation/submodules/mentor/rsx_count_errors.vhd"
+   type="VHDL_ENCRYPT"
+   library="decoder"
+   simulator="modelsim" />
+ <file
+   path="simulation/submodules/aldec/rsx_count_errors.vhd"
+   type="VHDL_ENCRYPT"
+   library="decoder"
+   simulator="riviera" />
+ <file
+   path="simulation/submodules/mentor/rsx_decoder.vhd"
+   type="VHDL_ENCRYPT"
+   library="decoder"
+   simulator="modelsim" />
+ <file
+   path="simulation/submodules/aldec/rsx_decoder.vhd"
+   type="VHDL_ENCRYPT"
+   library="decoder"
+   simulator="riviera" />
+ <file
+   path="simulation/submodules/mentor/rsx_error_dot.vhd"
+   type="VHDL_ENCRYPT"
+   library="decoder"
+   simulator="modelsim" />
+ <file
+   path="simulation/submodules/aldec/rsx_error_dot.vhd"
+   type="VHDL_ENCRYPT"
+   library="decoder"
+   simulator="riviera" />
+ <file
+   path="simulation/submodules/mentor/rsx_fifo.vhd"
+   type="VHDL_ENCRYPT"
+   library="decoder"
+   simulator="modelsim" />
+ <file
+   path="simulation/submodules/aldec/rsx_fifo.vhd"
+   type="VHDL_ENCRYPT"
+   library="decoder"
+   simulator="riviera" />
+ <file
+   path="simulation/submodules/mentor/rsx_fit_counter.vhd"
+   type="VHDL_ENCRYPT"
+   library="decoder"
+   simulator="modelsim" />
+ <file
+   path="simulation/submodules/aldec/rsx_fit_counter.vhd"
+   type="VHDL_ENCRYPT"
+   library="decoder"
+   simulator="riviera" />
+ <file
+   path="simulation/submodules/mentor/rsx_gf_inv.vhd"
+   type="VHDL_ENCRYPT"
+   library="decoder"
+   simulator="modelsim" />
+ <file
+   path="simulation/submodules/aldec/rsx_gf_inv.vhd"
+   type="VHDL_ENCRYPT"
+   library="decoder"
+   simulator="riviera" />
+ <file
+   path="simulation/submodules/mentor/rsx_omega_pipe.vhd"
+   type="VHDL_ENCRYPT"
+   library="decoder"
+   simulator="modelsim" />
+ <file
+   path="simulation/submodules/aldec/rsx_omega_pipe.vhd"
+   type="VHDL_ENCRYPT"
+   library="decoder"
+   simulator="riviera" />
+ <file
+   path="simulation/submodules/mentor/rsx_omega_vecpipe.vhd"
+   type="VHDL_ENCRYPT"
+   library="decoder"
+   simulator="modelsim" />
+ <file
+   path="simulation/submodules/aldec/rsx_omega_vecpipe.vhd"
+   type="VHDL_ENCRYPT"
+   library="decoder"
+   simulator="riviera" />
+ <file
+   path="simulation/submodules/mentor/rsx_poly_dot.vhd"
+   type="VHDL_ENCRYPT"
+   library="decoder"
+   simulator="modelsim" />
+ <file
+   path="simulation/submodules/aldec/rsx_poly_dot.vhd"
+   type="VHDL_ENCRYPT"
+   library="decoder"
+   simulator="riviera" />
+ <file
+   path="simulation/submodules/mentor/rsx_search.vhd"
+   type="VHDL_ENCRYPT"
+   library="decoder"
+   simulator="modelsim" />
+ <file
+   path="simulation/submodules/aldec/rsx_search.vhd"
+   type="VHDL_ENCRYPT"
+   library="decoder"
+   simulator="riviera" />
+ <file
+   path="simulation/submodules/mentor/rsx_searches.vhd"
+   type="VHDL_ENCRYPT"
+   library="decoder"
+   simulator="modelsim" />
+ <file
+   path="simulation/submodules/aldec/rsx_searches.vhd"
+   type="VHDL_ENCRYPT"
+   library="decoder"
+   simulator="riviera" />
+ <file
+   path="simulation/submodules/mentor/rsx_searcheslast.vhd"
+   type="VHDL_ENCRYPT"
+   library="decoder"
+   simulator="modelsim" />
+ <file
+   path="simulation/submodules/aldec/rsx_searcheslast.vhd"
+   type="VHDL_ENCRYPT"
+   library="decoder"
+   simulator="riviera" />
+ <file
+   path="simulation/submodules/mentor/rsx_syndrome.vhd"
+   type="VHDL_ENCRYPT"
+   library="decoder"
+   simulator="modelsim" />
+ <file
+   path="simulation/submodules/aldec/rsx_syndrome.vhd"
+   type="VHDL_ENCRYPT"
+   library="decoder"
+   simulator="riviera" />
+ <file
+   path="simulation/submodules/mentor/rsx_syndrome_poly.vhd"
+   type="VHDL_ENCRYPT"
+   library="decoder"
+   simulator="modelsim" />
+ <file
+   path="simulation/submodules/aldec/rsx_syndrome_poly.vhd"
+   type="VHDL_ENCRYPT"
+   library="decoder"
+   simulator="riviera" />
+ <file
+   path="simulation/submodules/mentor/rsx_syndrome_zero.vhd"
+   type="VHDL_ENCRYPT"
+   library="decoder"
+   simulator="modelsim" />
+ <file
+   path="simulation/submodules/aldec/rsx_syndrome_zero.vhd"
+   type="VHDL_ENCRYPT"
+   library="decoder"
+   simulator="riviera" />
+ <file
+   path="simulation/submodules/RSdecoder_highspeed_rs_0.v"
+   type="VERILOG"
+   library="highspeed_rs_0" />
+ <file path="simulation/RSdecoder.v" type="VERILOG" />
+ <topLevel name="RSdecoder" />
+ <deviceFamily name="cyclonev" />
+</simPackage>
