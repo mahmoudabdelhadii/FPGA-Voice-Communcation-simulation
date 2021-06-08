@@ -3,6 +3,7 @@ module Final_project(
 
     //////////// CLOCK //////////
     CLOCK_50,
+	 CLOCK2_50,
 
     //////////// LED //////////
     LEDR,
@@ -34,10 +35,8 @@ module Final_project(
     FPGA_I2C_SDAT,
     
     
-    //////// PS2 //////////
-    PS2_CLK,
-    PS2_DAT,
-    
+   
+   
     //////// SDRAM //////////
     DRAM_ADDR,
     DRAM_BA,
@@ -51,9 +50,8 @@ module Final_project(
     DRAM_RAS_N,
     DRAM_WE_N,
     
-    //////// GPIO //////////
-    GPIO_0,
-    GPIO_1
+ 
+ 
     
 );
 `define zero_pad(width,signal)  {{((width)-$size(signal)){1'b0}},(signal)}
@@ -63,6 +61,7 @@ module Final_project(
 
 //////////// CLOCK //////////
 input                       CLOCK_50;
+input								CLOCK2_50;
 
 //////////// LED //////////
 output           [9:0]      LEDR;
@@ -95,14 +94,8 @@ output                      AUD_XCK;
 output                      FPGA_I2C_SCLK;
 inout                       FPGA_I2C_SDAT;
 
-//////////// PS2 //////////
-inout                       PS2_CLK;
-inout                       PS2_DAT;
 
-//////////// GPIO //////////
-inout           [35:0]      GPIO_0;
-inout           [35:0]      GPIO_1;
-                
+
                 
 //////////// SDRAM //////////
 output          [12:0]      DRAM_ADDR;
@@ -130,7 +123,9 @@ assign CLK_50M =  CLOCK_50;
 assign LEDR[9:0] = LED[9:0];
 wire reset;
 assign reset =~KEY[3];
-
+assign pause = SW[0];
+assign start = SW[1];
+logic read,write,CLOCK2_50,write_ready,read_ready;
 //Character definitions
 
 
@@ -150,10 +145,8 @@ Clock_divider U1(
 logic sampling_clk_edge;
 	  /////////////////clock divider for sampling clock code here//////////////////////////
 	  
-	  
-
 	 
-/////////////////clock 7200Hz and 50MHz syncronization and edge detection //////////////////////////
+/////////////////clock and 50MHz syncronization and edge detection //////////////////////////
 	   
 /*
 asyncsig U9(
@@ -163,7 +156,7 @@ asyncsig U9(
 );*/
 
 edge_detect_gate U7(
-.clk50(CLK_50M),      //direct CHU edge detector implementation
+.clk50(CLK_50M),        //direct CHU edge detector implementation
 .reset(1'b0),
 .clkother(sampling_clk),
 .edge_clk(sampling_clk_edge)
@@ -178,11 +171,14 @@ wire    [22:0]  flash_mem_address;
 wire    [31:0]  flash_mem_readdata;
 wire            flash_mem_readdatavalid;
 wire    [3:0]   flash_mem_byteenable;
-assign writedata_left = audio_data;
-	assign writedata_right = audio_data;
+
+	logic signed [23:0] writedata_left, writedata_right;
+	logic [15:0] audio_data;
+	logic [15:0] data_out;
+	logic signed [23:0]readdata_left, readdata_right;
+  assign writedata_left = {audio_data,8'b11111111};
+assign writedata_right = {audio_data,8'b11111111};
 	assign read = 1'b0;
-	
-	logic signed[15:0] audio_data;
 	 assign audio_data = data_out;
 
 	/////////////////Flash Control modules //////////////////////////
@@ -200,8 +196,7 @@ logic pause,start;
 		.flash_mem_byteenable(flash_mem_byteenable), 
 		.data_out(data_out), 
 		.flash_mem_address(flash_mem_address),
-    .dataenable(write)
-		
+    .write_codec(write)
 		);
 	
 	flash flash_inst (
@@ -224,19 +219,21 @@ logic pause,start;
 	assign flash_mem_write = 1'b0;
 	assign flash_mem_writedata = 32'b0;  //as stated in lab manual, set writes to 0
 	assign flash_mem_burstcount = 6'b000001;
-	 
-	 
-	
-	 
-	 
-	 
-	 
-	 
-	 
-	 
+
+
 /////////////////final project code here//////////////////////////
-
-
+/*
+  message_RAM message_RAM (
+    .data(),
+    .rdaddress(),
+    .rdclock(),
+    .rden(),
+    .wraddress(),
+    .wrclock(),
+    .wren(),
+    .q()
+    );
+*/
 
 
 
@@ -262,13 +259,13 @@ SevenSegmentDisplayDecoder U17(HEX5, inHEX5);
   logic [3:0]inHEX3;
   logic [3:0]inHEX4;
   logic [3:0]inHEX5;
-  /*assign inHEX0 = phoneme_sel[3:0];
-  assign inHEX1 = phoneme_sel[7:4];
-  assign inHEX2 =flash_mem_address[3:0];
-  assign inHEX3 =flash_mem_address[7:4];
-  assign inHEX4 = data_out[3:0];
-  assign inHEX5 = data_out[7:4];
-  */
+  assign inHEX0 = audio_data[3:0];
+  assign inHEX1 = audio_data[7:4];
+  assign inHEX2 = audio_data[11:8];
+  assign inHEX3 = audio_data[15:12];
+  assign inHEX4 = write;
+  assign inHEX5 = write_ready;
+  
 
 
 
