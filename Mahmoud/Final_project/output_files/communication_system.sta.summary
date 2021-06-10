@@ -1,0 +1,229 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'CLOCK_50'
+Slack : 4.414
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Setup 'flashfsm:U8|state[6]'
+Slack : 15.587
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Setup 'flashfsm:U8|addressfsm:U6|next'
+Slack : 30.098
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Setup 'flashfsm:U8|addressfsm:U6|send'
+Slack : 36.903
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'CLOCK_50'
+Slack : 0.216
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'flashfsm:U8|addressfsm:U6|next'
+Slack : 0.282
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'flashfsm:U8|addressfsm:U6|send'
+Slack : 0.475
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'flashfsm:U8|state[6]'
+Slack : 2.018
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Recovery 'CLOCK_50'
+Slack : 7.238
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Removal 'CLOCK_50'
+Slack : 0.832
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : 8.874
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'flashfsm:U8|state[6]'
+Slack : 19.278
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'flashfsm:U8|addressfsm:U6|send'
+Slack : 19.360
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'flashfsm:U8|addressfsm:U6|next'
+Slack : 19.417
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'CLOCK_50'
+Slack : 4.412
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'flashfsm:U8|state[6]'
+Slack : 15.462
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'flashfsm:U8|addressfsm:U6|next'
+Slack : 30.444
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'flashfsm:U8|addressfsm:U6|send'
+Slack : 37.002
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'CLOCK_50'
+Slack : 0.138
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'flashfsm:U8|addressfsm:U6|next'
+Slack : 0.284
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'flashfsm:U8|addressfsm:U6|send'
+Slack : 0.415
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'flashfsm:U8|state[6]'
+Slack : 2.160
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Recovery 'CLOCK_50'
+Slack : 7.326
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Removal 'CLOCK_50'
+Slack : 0.778
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : 8.831
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'flashfsm:U8|state[6]'
+Slack : 19.287
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'flashfsm:U8|addressfsm:U6|send'
+Slack : 19.363
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'flashfsm:U8|addressfsm:U6|next'
+Slack : 19.412
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'CLOCK_50'
+Slack : 6.961
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'flashfsm:U8|state[6]'
+Slack : 17.280
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'flashfsm:U8|addressfsm:U6|next'
+Slack : 32.988
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'flashfsm:U8|addressfsm:U6|send'
+Slack : 37.825
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'flashfsm:U8|addressfsm:U6|next'
+Slack : 0.092
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'flashfsm:U8|addressfsm:U6|send'
+Slack : 0.109
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'CLOCK_50'
+Slack : 0.139
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'flashfsm:U8|state[6]'
+Slack : 0.945
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Recovery 'CLOCK_50'
+Slack : 8.474
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Removal 'CLOCK_50'
+Slack : 0.468
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : 8.790
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'flashfsm:U8|state[6]'
+Slack : 19.495
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'flashfsm:U8|addressfsm:U6|send'
+Slack : 19.584
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'flashfsm:U8|addressfsm:U6|next'
+Slack : 19.614
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'CLOCK_50'
+Slack : 7.193
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'flashfsm:U8|state[6]'
+Slack : 17.328
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'flashfsm:U8|addressfsm:U6|next'
+Slack : 33.830
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'flashfsm:U8|addressfsm:U6|send'
+Slack : 38.025
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'CLOCK_50'
+Slack : -0.021
+TNS   : -0.041
+
+Type  : Fast 1100mV 0C Model Hold 'flashfsm:U8|addressfsm:U6|send'
+Slack : 0.029
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'flashfsm:U8|addressfsm:U6|next'
+Slack : 0.080
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'flashfsm:U8|state[6]'
+Slack : 0.968
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Recovery 'CLOCK_50'
+Slack : 8.664
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Removal 'CLOCK_50'
+Slack : 0.424
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : 8.784
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'flashfsm:U8|state[6]'
+Slack : 19.533
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'flashfsm:U8|addressfsm:U6|send'
+Slack : 19.598
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'flashfsm:U8|addressfsm:U6|next'
+Slack : 19.623
+TNS   : 0.000
+
+------------------------------------------------------------

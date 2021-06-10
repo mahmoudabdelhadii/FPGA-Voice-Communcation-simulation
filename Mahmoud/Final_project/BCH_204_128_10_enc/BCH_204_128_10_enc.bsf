@@ -1,0 +1,146 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2016  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 0 0 304 248)
+	(text "BCH_204_128_10_enc" (rect 87 -1 181 11)(font "Arial" (font_size 10)))
+	(text "inst" (rect 8 232 20 244)(font "Arial" ))
+	(port
+		(pt 0 72)
+		(input)
+		(text "clk" (rect 0 0 10 12)(font "Arial" (font_size 8)))
+		(text "clk" (rect 4 61 22 72)(font "Arial" (font_size 8)))
+		(line (pt 0 72)(pt 80 72)(line_width 1))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "reset" (rect 0 0 20 12)(font "Arial" (font_size 8)))
+		(text "reset" (rect 4 101 34 112)(font "Arial" (font_size 8)))
+		(line (pt 0 112)(pt 80 112)(line_width 1))
+	)
+	(port
+		(pt 0 152)
+		(input)
+		(text "load" (rect 0 0 15 12)(font "Arial" (font_size 8)))
+		(text "load" (rect 4 141 28 152)(font "Arial" (font_size 8)))
+		(line (pt 0 152)(pt 80 152)(line_width 1))
+	)
+	(port
+		(pt 0 184)
+		(input)
+		(text "sop_in" (rect 0 0 25 12)(font "Arial" (font_size 8)))
+		(text "sop_in" (rect 4 173 40 184)(font "Arial" (font_size 8)))
+		(line (pt 0 184)(pt 80 184)(line_width 1))
+	)
+	(port
+		(pt 0 200)
+		(input)
+		(text "eop_in" (rect 0 0 25 12)(font "Arial" (font_size 8)))
+		(text "eop_in" (rect 4 189 40 200)(font "Arial" (font_size 8)))
+		(line (pt 0 200)(pt 80 200)(line_width 1))
+	)
+	(port
+		(pt 0 216)
+		(input)
+		(text "data_in[7..0]" (rect 0 0 48 12)(font "Arial" (font_size 8)))
+		(text "data_in[7..0]" (rect 4 205 82 216)(font "Arial" (font_size 8)))
+		(line (pt 0 216)(pt 80 216)(line_width 3))
+	)
+	(port
+		(pt 304 88)
+		(input)
+		(text "sink_ready" (rect 0 0 44 12)(font "Arial" (font_size 8)))
+		(text "sink_ready" (rect 248 77 308 88)(font "Arial" (font_size 8)))
+		(line (pt 304 88)(pt 224 88)(line_width 1))
+	)
+	(port
+		(pt 0 168)
+		(output)
+		(text "ready" (rect 0 0 23 12)(font "Arial" (font_size 8)))
+		(text "ready" (rect 4 157 34 168)(font "Arial" (font_size 8)))
+		(line (pt 0 168)(pt 80 168)(line_width 1))
+	)
+	(port
+		(pt 304 72)
+		(output)
+		(text "valid_out" (rect 0 0 35 12)(font "Arial" (font_size 8)))
+		(text "valid_out" (rect 258 61 312 72)(font "Arial" (font_size 8)))
+		(line (pt 304 72)(pt 224 72)(line_width 1))
+	)
+	(port
+		(pt 304 104)
+		(output)
+		(text "sop_out" (rect 0 0 31 12)(font "Arial" (font_size 8)))
+		(text "sop_out" (rect 262 93 304 104)(font "Arial" (font_size 8)))
+		(line (pt 304 104)(pt 224 104)(line_width 1))
+	)
+	(port
+		(pt 304 120)
+		(output)
+		(text "eop_out" (rect 0 0 31 12)(font "Arial" (font_size 8)))
+		(text "eop_out" (rect 262 109 304 120)(font "Arial" (font_size 8)))
+		(line (pt 304 120)(pt 224 120)(line_width 1))
+	)
+	(port
+		(pt 304 136)
+		(output)
+		(text "data_out[7..0]" (rect 0 0 54 12)(font "Arial" (font_size 8)))
+		(text "data_out[7..0]" (rect 235 125 319 136)(font "Arial" (font_size 8)))
+		(line (pt 304 136)(pt 224 136)(line_width 3))
+	)
+	(drawing
+		(text "clk" (rect 65 43 148 99)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 85 67 188 144)(font "Arial" (color 0 0 0)))
+		(text "rst" (rect 65 83 148 179)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "reset" (rect 85 107 200 224)(font "Arial" (color 0 0 0)))
+		(text "in" (rect 71 123 154 259)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "valid" (rect 85 147 200 304)(font "Arial" (color 0 0 0)))
+		(text "ready" (rect 85 163 200 336)(font "Arial" (color 0 0 0)))
+		(text "startofpacket" (rect 85 179 248 368)(font "Arial" (color 0 0 0)))
+		(text "endofpacket" (rect 85 195 236 400)(font "Arial" (color 0 0 0)))
+		(text "data_in" (rect 85 211 212 432)(font "Arial" (color 0 0 0)))
+		(text "out" (rect 225 43 468 99)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "valid" (rect 201 67 432 144)(font "Arial" (color 0 0 0)))
+		(text "ready" (rect 196 83 422 176)(font "Arial" (color 0 0 0)))
+		(text "startofpacket" (rect 164 99 406 208)(font "Arial" (color 0 0 0)))
+		(text "endofpacket" (rect 169 115 404 240)(font "Arial" (color 0 0 0)))
+		(text "data_out" (rect 184 131 416 272)(font "Arial" (color 0 0 0)))
+		(text " system " (rect 269 232 586 474)(font "Arial" ))
+		(line (pt 80 32)(pt 224 32)(line_width 1))
+		(line (pt 224 32)(pt 224 232)(line_width 1))
+		(line (pt 80 232)(pt 224 232)(line_width 1))
+		(line (pt 80 32)(pt 80 232)(line_width 1))
+		(line (pt 81 52)(pt 81 76)(line_width 1))
+		(line (pt 82 52)(pt 82 76)(line_width 1))
+		(line (pt 81 92)(pt 81 116)(line_width 1))
+		(line (pt 82 92)(pt 82 116)(line_width 1))
+		(line (pt 81 132)(pt 81 220)(line_width 1))
+		(line (pt 82 132)(pt 82 220)(line_width 1))
+		(line (pt 223 52)(pt 223 140)(line_width 1))
+		(line (pt 222 52)(pt 222 140)(line_width 1))
+		(line (pt 0 0)(pt 304 0)(line_width 1))
+		(line (pt 304 0)(pt 304 248)(line_width 1))
+		(line (pt 0 248)(pt 304 248)(line_width 1))
+		(line (pt 0 0)(pt 0 248)(line_width 1))
+	)
+)

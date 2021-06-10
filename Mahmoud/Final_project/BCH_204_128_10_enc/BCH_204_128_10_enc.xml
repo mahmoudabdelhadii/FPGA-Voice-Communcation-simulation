@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy
+ date="2021.06.08.00:17:21"
+ outputDirectory="C:/Users/Mahmoud/Desktop/ELEC391/Comms_ass/BCH_204_128_10_enc/">
+ <perimeter>
+  <parameter
+     name="AUTO_GENERATION_ID"
+     type="Integer"
+     defaultValue="0"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_UNIQUE_ID"
+     type="String"
+     defaultValue=""
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_FAMILY"
+     type="String"
+     defaultValue="Cyclone V"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE"
+     type="String"
+     defaultValue="5CSEMA5F31C6"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_SPEEDGRADE"
+     type="String"
+     defaultValue="6"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <interface name="clk" kind="clock" start="0">
+   <property name="clockRate" value="100000000" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="clk" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="in" kind="conduit" start="0">
+   <property name="associatedClock" value="clk" />
+   <property name="associatedReset" value="rst" />
+   <port name="load" direction="input" role="valid" width="1" />
+   <port name="ready" direction="output" role="ready" width="1" />
+   <port name="sop_in" direction="input" role="startofpacket" width="1" />
+   <port name="eop_in" direction="input" role="endofpacket" width="1" />
+   <port name="data_in" direction="input" role="data_in" width="8" />
+  </interface>
+  <interface name="out" kind="conduit" start="0">
+   <property name="associatedClock" value="clk" />
+   <property name="associatedReset" value="rst" />
+   <port name="valid_out" direction="output" role="valid" width="1" />
+   <port name="sink_ready" direction="input" role="ready" width="1" />
+   <port name="sop_out" direction="output" role="startofpacket" width="1" />
+   <port name="eop_out" direction="output" role="endofpacket" width="1" />
+   <port name="data_out" direction="output" role="data_out" width="8" />
+  </interface>
+  <interface name="rst" kind="reset" start="0">
+   <property name="associatedClock" value="clk" />
+   <property name="synchronousEdges" value="DEASSERT" />
+   <port name="reset" direction="input" role="reset" width="1" />
+  </interface>
+ </perimeter>
+ <entity
+   path=""
+   parameterizationKey="BCH_204_128_10_enc:1.0:AUTO_CLK_CLOCK_DOMAIN=-1,AUTO_CLK_CLOCK_RATE=-1,AUTO_CLK_RESET_DOMAIN=-1,AUTO_DEVICE=5CSEMA5F31C6,AUTO_DEVICE_FAMILY=Cyclone V,AUTO_DEVICE_SPEEDGRADE=6,AUTO_GENERATION_ID=1623104241,AUTO_UNIQUE_ID=(altera_bch:16.1:BCH=Encoder,DATA_WIDTH=8,IRRPOL=285,K_BITS=128,M_BITS=8,N_BITS=204,PARITY_BITS=76,T_BITS=10,design_env=NATIVE,selected_device_family=Cyclone V)"
+   instancePathKey="BCH_204_128_10_enc"
+   kind="BCH_204_128_10_enc"
+   version="1.0"
+   name="BCH_204_128_10_enc">
+  <parameter name="AUTO_CLK_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_GENERATION_ID" value="1623104241" />
+  <parameter name="AUTO_DEVICE" value="5CSEMA5F31C6" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone V" />
+  <parameter name="AUTO_CLK_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_CLK_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_UNIQUE_ID" value="" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="6" />
+  <generatedFiles>
+   <file
+       path="C:/Users/Mahmoud/Desktop/ELEC391/Comms_ass/BCH_204_128_10_enc/synthesis/BCH_204_128_10_enc.v"
+       type="VERILOG" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="C:/Users/Mahmoud/Desktop/ELEC391/Comms_ass/BCH_204_128_10_enc/synthesis/submodules/bch_enc_package.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="C:/Users/Mahmoud/Desktop/ELEC391/Comms_ass/BCH_204_128_10_enc/synthesis/submodules/bch_encoder_core.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="C:/Users/Mahmoud/Desktop/ELEC391/Comms_ass/BCH_204_128_10_enc/synthesis/submodules/bch_encoder.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="C:/Users/Mahmoud/Desktop/ELEC391/Comms_ass/BCH_204_128_10_enc/synthesis/submodules/bchp_decoder.ocp"
+       type="OTHER"
+       attributes="" />
+   <file
+       path="C:/Users/Mahmoud/Desktop/ELEC391/Comms_ass/BCH_204_128_10_enc/synthesis/submodules/bch_encoder.ocp"
+       type="OTHER"
+       attributes="" />
+   <file
+       path="C:/Users/Mahmoud/Desktop/ELEC391/Comms_ass/BCH_204_128_10_enc/synthesis/submodules/BCH_204_128_10_enc_bch_0.vhd"
+       type="VHDL"
+       attributes="" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="C:/Users/Mahmoud/Desktop/ELEC391/Comms_ass/BCH_204_128_10_enc.qsys" />
+  </sourceFiles>
+  <childSourceFiles>
+   <file path="C:/intelfpga_lite/16.1/ip/altera/dsp/altera_bch/bch_hw.tcl" />
+  </childSourceFiles>
+  <messages>
+   <message level="Debug" culprit="BCH_204_128_10_enc">queue size: 0 starting:BCH_204_128_10_enc "BCH_204_128_10_enc"</message>
+   <message level="Progress" culprit="min"></message>
+   <message level="Progress" culprit="max"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Debug">Transform: CustomInstructionTransform</message>
+   <message level="Debug">No custom instruction connections, skipping transform </message>
+   <message level="Debug" culprit="merlin_custom_instruction_transform"><![CDATA[After transform: <b>1</b> modules, <b>0</b> connections]]></message>
+   <message level="Debug">Transform: MMTransform</message>
+   <message level="Debug">Transform: InterruptMapperTransform</message>
+   <message level="Debug">Transform: InterruptSyncTransform</message>
+   <message level="Debug">Transform: InterruptFanoutTransform</message>
+   <message level="Debug">Transform: AvalonStreamingTransform</message>
+   <message level="Debug">Transform: ResetAdaptation</message>
+   <message level="Debug" culprit="BCH_204_128_10_enc"><![CDATA["<b>BCH_204_128_10_enc</b>" reuses <b>altera_bch</b> "<b>submodules/BCH_204_128_10_enc_bch_0</b>"]]></message>
+   <message level="Debug" culprit="BCH_204_128_10_enc">queue size: 0 starting:altera_bch "submodules/BCH_204_128_10_enc_bch_0"</message>
+   <message level="Info" culprit="bch_0">Generating BCH generator polynomial</message>
+   <message level="Info" culprit="bch_0">Generating support files for BCH encoder</message>
+   <message level="Info" culprit="bch_0">----Writing bch_enc_package.vhd</message>
+   <message level="Info" culprit="bch_0"><![CDATA["<b>BCH_204_128_10_enc</b>" instantiated <b>altera_bch</b> "<b>bch_0</b>"]]></message>
+  </messages>
+ </entity>
+ <entity
+   path="submodules/"
+   parameterizationKey="altera_bch:16.1:BCH=Encoder,DATA_WIDTH=8,IRRPOL=285,K_BITS=128,M_BITS=8,N_BITS=204,PARITY_BITS=76,T_BITS=10,design_env=NATIVE,selected_device_family=Cyclone V"
+   instancePathKey="BCH_204_128_10_enc:.:bch_0"
+   kind="altera_bch"
+   version="16.1"
+   name="BCH_204_128_10_enc_bch_0">
+  <parameter name="T_BITS" value="10" />
+  <parameter name="DATA_WIDTH" value="8" />
+  <parameter name="N_BITS" value="204" />
+  <parameter name="BCH" value="Encoder" />
+  <parameter name="M_BITS" value="8" />
+  <parameter name="selected_device_family" value="Cyclone V" />
+  <parameter name="PARITY_BITS" value="76" />
+  <parameter name="design_env" value="NATIVE" />
+  <parameter name="K_BITS" value="128" />
+  <parameter name="IRRPOL" value="285" />
+  <generatedFiles>
+   <file
+       path="C:/Users/Mahmoud/Desktop/ELEC391/Comms_ass/BCH_204_128_10_enc/synthesis/submodules/bch_enc_package.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="C:/Users/Mahmoud/Desktop/ELEC391/Comms_ass/BCH_204_128_10_enc/synthesis/submodules/bch_encoder_core.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="C:/Users/Mahmoud/Desktop/ELEC391/Comms_ass/BCH_204_128_10_enc/synthesis/submodules/bch_encoder.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="C:/Users/Mahmoud/Desktop/ELEC391/Comms_ass/BCH_204_128_10_enc/synthesis/submodules/bchp_decoder.ocp"
+       type="OTHER"
+       attributes="" />
+   <file
+       path="C:/Users/Mahmoud/Desktop/ELEC391/Comms_ass/BCH_204_128_10_enc/synthesis/submodules/bch_encoder.ocp"
+       type="OTHER"
+       attributes="" />
+   <file
+       path="C:/Users/Mahmoud/Desktop/ELEC391/Comms_ass/BCH_204_128_10_enc/synthesis/submodules/BCH_204_128_10_enc_bch_0.vhd"
+       type="VHDL"
+       attributes="" />
+  </generatedFiles>
+  <childGeneratedFiles/>
+  <sourceFiles>
+   <file path="C:/intelfpga_lite/16.1/ip/altera/dsp/altera_bch/bch_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator instantiator="BCH_204_128_10_enc" as="bch_0" />
+  <messages>
+   <message level="Debug" culprit="BCH_204_128_10_enc">queue size: 0 starting:altera_bch "submodules/BCH_204_128_10_enc_bch_0"</message>
+   <message level="Info" culprit="bch_0">Generating BCH generator polynomial</message>
+   <message level="Info" culprit="bch_0">Generating support files for BCH encoder</message>
+   <message level="Info" culprit="bch_0">----Writing bch_enc_package.vhd</message>
+   <message level="Info" culprit="bch_0"><![CDATA["<b>BCH_204_128_10_enc</b>" instantiated <b>altera_bch</b> "<b>bch_0</b>"]]></message>
+  </messages>
+ </entity>
+</deploy>

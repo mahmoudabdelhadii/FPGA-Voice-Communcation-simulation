@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="simulation/submodules/bch_enc_package.vhd"
+   type="VHDL"
+   library="bch_0" />
+ <file
+   path="simulation/submodules/mentor/bch_encoder_core.vhd"
+   type="VHDL_ENCRYPT"
+   library="bch_0"
+   simulator="modelsim" />
+ <file
+   path="simulation/submodules/aldec/bch_encoder_core.vhd"
+   type="VHDL_ENCRYPT"
+   library="bch_0"
+   simulator="riviera" />
+ <file
+   path="simulation/submodules/mentor/bch_encoder.vhd"
+   type="VHDL_ENCRYPT"
+   library="bch_0"
+   simulator="modelsim" />
+ <file
+   path="simulation/submodules/aldec/bch_encoder.vhd"
+   type="VHDL_ENCRYPT"
+   library="bch_0"
+   simulator="riviera" />
+ <file path="simulation/submodules/top_enc.vhd" type="VHDL" library="bch_0" />
+ <file path="simulation/BCH_example.v" type="VERILOG" />
+ <topLevel name="BCH_example" />
+ <deviceFamily name="cyclonev" />
+</simPackage>

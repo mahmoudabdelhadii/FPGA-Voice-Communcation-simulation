@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file path="carrier_freq_sim/carrier_freq.vo" type="VERILOG" />
+ <topLevel name="carrier_freq" />
+ <deviceFamily name="cyclonev" />
+</simPackage>

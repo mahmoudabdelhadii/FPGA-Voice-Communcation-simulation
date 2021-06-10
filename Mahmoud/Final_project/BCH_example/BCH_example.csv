@@ -1,0 +1,23 @@
+# system info BCH_example on 2021.06.07.17:24:37
+system_info:
+name,value
+DEVICE,5CSEMA5F31C6
+DEVICE_FAMILY,Cyclone V
+GENERATION_ID,1623079476
+#
+#
+# Files generated for BCH_example on 2021.06.07.17:24:37
+files:
+filepath,kind,attributes,module,is_top
+simulation/BCH_example.v,VERILOG,,BCH_example,true
+simulation/submodules/bch_enc_package.vhd,VHDL,,BCH_example_bch_0,false
+simulation/submodules/mentor/bch_encoder_core.vhd,VHDL_ENCRYPT,MENTOR_SPECIFIC,BCH_example_bch_0,false
+simulation/submodules/aldec/bch_encoder_core.vhd,VHDL_ENCRYPT,ALDEC_SPECIFIC,BCH_example_bch_0,false
+simulation/submodules/mentor/bch_encoder.vhd,VHDL_ENCRYPT,MENTOR_SPECIFIC,BCH_example_bch_0,false
+simulation/submodules/aldec/bch_encoder.vhd,VHDL_ENCRYPT,ALDEC_SPECIFIC,BCH_example_bch_0,false
+simulation/submodules/top_enc.vhd,VHDL,,BCH_example_bch_0,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+BCH_example.bch_0,BCH_example_bch_0

@@ -1,0 +1,56 @@
+Info: Starting: Create simulation model
+Info: qsys-generate C:\Users\Mahmoud\Desktop\ELEC391\Comms_ass\BCH_example.qsys --simulation=VERILOG --allow-mixed-language-simulation --output-directory=C:\Users\Mahmoud\Desktop\ELEC391\Comms_ass\BCH_example\simulation --family="Cyclone V" --part=5CSEMA5F31C6
+Progress: Loading Comms_ass/BCH_example.qsys
+Progress: Reading input file
+Progress: Adding bch_0 [altera_bch 16.1]
+Progress: Parameterizing module bch_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: BCH_example: Generating BCH_example "BCH_example" for SIM_VERILOG
+Info: bch_0: Generating BCH generator polynomial
+Info: bch_0: Generating support files for BCH encoder
+Info: bch_0: ----Writing bch_enc_package.vhd
+Info: bch_0: "BCH_example" instantiated altera_bch "bch_0"
+Info: BCH_example: Done "BCH_example" with 2 modules, 7 files
+Info: qsys-generate succeeded.
+Info: Finished: Create simulation model
+Info: Starting: Create Modelsim Project.
+Info: sim-script-gen --spd=C:\Users\Mahmoud\Desktop\ELEC391\Comms_ass\BCH_example\BCH_example.spd --output-directory=C:/Users/Mahmoud/Desktop/ELEC391/Comms_ass/BCH_example/simulation/ --use-relative-paths=true
+Info: Doing: ip-make-simscript --spd=C:\Users\Mahmoud\Desktop\ELEC391\Comms_ass\BCH_example\BCH_example.spd --output-directory=C:/Users/Mahmoud/Desktop/ELEC391/Comms_ass/BCH_example/simulation/ --use-relative-paths=true
+Info: Generating the following file(s) for MODELSIM simulator in C:/Users/Mahmoud/Desktop/ELEC391/Comms_ass/BCH_example/simulation/ directory:
+Info: 	mentor/msim_setup.tcl
+Info: Skipping VCS script generation since VHDL file $QUARTUS_INSTALL_DIR/eda/sim_lib/altera_syn_attributes.vhd is required for simulation
+Info: Generating the following file(s) for VCSMX simulator in C:/Users/Mahmoud/Desktop/ELEC391/Comms_ass/BCH_example/simulation/ directory:
+Info: 	synopsys/vcsmx/synopsys_sim.setup
+Info: 	synopsys/vcsmx/vcsmx_setup.sh
+Info: Generating the following file(s) for NCSIM simulator in C:/Users/Mahmoud/Desktop/ELEC391/Comms_ass/BCH_example/simulation/ directory:
+Info: 	cadence/cds.lib
+Info: 	cadence/hdl.var
+Info: 	cadence/ncsim_setup.sh
+Info: 	1 .cds.lib files in cadence/cds_libs/ directory
+Info: Generating the following file(s) for RIVIERA simulator in C:/Users/Mahmoud/Desktop/ELEC391/Comms_ass/BCH_example/simulation/ directory:
+Info: 	aldec/rivierapro_setup.tcl
+Info: For information on how to simulate your IP, see the explanatory comments in the simulator-specific subdirectories under C:/Users/Mahmoud/Desktop/ELEC391/Comms_ass/BCH_example/simulation/.
+Info: Regenerate these scripts whenever you make any change to any Quartus-generated IP in your project.
+Info: Finished: Create Modelsim Project.
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate C:\Users\Mahmoud\Desktop\ELEC391\Comms_ass\BCH_example.qsys --synthesis=VERILOG --output-directory=C:\Users\Mahmoud\Desktop\ELEC391\Comms_ass\BCH_example\synthesis --family="Cyclone V" --part=5CSEMA5F31C6
+Progress: Loading Comms_ass/BCH_example.qsys
+Progress: Reading input file
+Progress: Adding bch_0 [altera_bch 16.1]
+Progress: Parameterizing module bch_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: BCH_example: Generating BCH_example "BCH_example" for QUARTUS_SYNTH
+Info: bch_0: Generating BCH generator polynomial
+Info: bch_0: Generating support files for BCH encoder
+Info: bch_0: ----Writing bch_enc_package.vhd
+Info: bch_0: "BCH_example" instantiated altera_bch "bch_0"
+Info: BCH_example: Done "BCH_example" with 2 modules, 7 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

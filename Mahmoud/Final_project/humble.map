@@ -1,0 +1,16 @@
+BLOCK		START ADDRESS		END ADDRESS
+
+Kendrick Lamar - HUMBLE.fin.hex		0x00000000		0x00767D9B
+Page_0		0x00767D9C		0x00E1696C
+
+
+Configuration device: 5CSEMA5
+Configuration mode: Active Serial
+Quad-Serial configuration device dummy clock cycle: 12
+
+
+Notes:
+
+- Data checksum for this conversion is 0x5A761B0A
+
+- All the addresses in this file are byte addresses

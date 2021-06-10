@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pinplan
+ variation_name="bch_0"
+ megafunction_name="ALTERA_BCH"
+ intended_family="Cyclone V"
+ specifies="all_ports">
+ <global>
+  <pin name="clk" direction="input" scope="external" />
+  <pin name="reset" direction="input" scope="external" />
+  <pin name="load" direction="input" scope="external" />
+  <pin name="ready" direction="output" scope="external" />
+  <pin name="sop_in" direction="input" scope="external" />
+  <pin name="eop_in" direction="input" scope="external" />
+  <pin name="data_in[7..0]" direction="input" scope="external" />
+  <pin name="valid_out" direction="output" scope="external" />
+  <pin name="sink_ready" direction="input" scope="external" />
+  <pin name="sop_out" direction="output" scope="external" />
+  <pin name="eop_out" direction="output" scope="external" />
+  <pin name="data_out[7..0]" direction="output" scope="external" />
+ </global>
+</pinplan>

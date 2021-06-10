@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at address_fsm.sv(38): always construct contains both blocking and non-blocking assignments File: C:/Users/Mahmoud/Desktop/ELEC391/Comms_ass/address_fsm.sv Line: 38

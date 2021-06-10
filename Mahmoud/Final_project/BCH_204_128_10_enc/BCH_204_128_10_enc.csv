@@ -1,0 +1,23 @@
+# system info BCH_204_128_10_enc on 2021.06.08.00:17:14
+system_info:
+name,value
+DEVICE,5CSEMA5F31C6
+DEVICE_FAMILY,Cyclone V
+GENERATION_ID,1623104233
+#
+#
+# Files generated for BCH_204_128_10_enc on 2021.06.08.00:17:14
+files:
+filepath,kind,attributes,module,is_top
+simulation/BCH_204_128_10_enc.v,VERILOG,,BCH_204_128_10_enc,true
+simulation/submodules/bch_enc_package.vhd,VHDL,,BCH_204_128_10_enc_bch_0,false
+simulation/submodules/mentor/bch_encoder_core.vhd,VHDL_ENCRYPT,MENTOR_SPECIFIC,BCH_204_128_10_enc_bch_0,false
+simulation/submodules/aldec/bch_encoder_core.vhd,VHDL_ENCRYPT,ALDEC_SPECIFIC,BCH_204_128_10_enc_bch_0,false
+simulation/submodules/mentor/bch_encoder.vhd,VHDL_ENCRYPT,MENTOR_SPECIFIC,BCH_204_128_10_enc_bch_0,false
+simulation/submodules/aldec/bch_encoder.vhd,VHDL_ENCRYPT,ALDEC_SPECIFIC,BCH_204_128_10_enc_bch_0,false
+simulation/submodules/top_enc.vhd,VHDL,,BCH_204_128_10_enc_bch_0,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+BCH_204_128_10_enc.bch_0,BCH_204_128_10_enc_bch_0

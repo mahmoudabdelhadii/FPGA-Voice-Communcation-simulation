@@ -1,0 +1,53 @@
+set_global_assignment -entity "BCH_204_128_10_enc" -library "BCH_204_128_10_enc" -name IP_TOOL_NAME "Qsys"
+set_global_assignment -entity "BCH_204_128_10_enc" -library "BCH_204_128_10_enc" -name IP_TOOL_VERSION "16.1"
+set_global_assignment -entity "BCH_204_128_10_enc" -library "BCH_204_128_10_enc" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -library "BCH_204_128_10_enc" -name SOPCINFO_FILE [file join $::quartus(qip_path) "../../BCH_204_128_10_enc.sopcinfo"]
+set_global_assignment -entity "BCH_204_128_10_enc" -library "BCH_204_128_10_enc" -name SLD_INFO "QSYS_NAME BCH_204_128_10_enc HAS_SOPCINFO 1 GENERATION_ID 1623104241"
+set_global_assignment -library "BCH_204_128_10_enc" -name MISC_FILE [file join $::quartus(qip_path) "../BCH_204_128_10_enc.cmp"]
+set_global_assignment -library "BCH_204_128_10_enc" -name SLD_FILE [file join $::quartus(qip_path) "BCH_204_128_10_enc.debuginfo"]
+set_global_assignment -entity "BCH_204_128_10_enc" -library "BCH_204_128_10_enc" -name IP_TARGETED_DEVICE_FAMILY "Cyclone V"
+set_global_assignment -entity "BCH_204_128_10_enc" -library "BCH_204_128_10_enc" -name IP_GENERATED_DEVICE_FAMILY "{Cyclone V}"
+set_global_assignment -entity "BCH_204_128_10_enc" -library "BCH_204_128_10_enc" -name IP_QSYS_MODE "STANDALONE"
+set_global_assignment -name SYNTHESIS_ONLY_QIP ON
+set_global_assignment -library "BCH_204_128_10_enc" -name MISC_FILE [file join $::quartus(qip_path) "../../BCH_204_128_10_enc.qsys"]
+set_global_assignment -entity "BCH_204_128_10_enc" -library "BCH_204_128_10_enc" -name IP_COMPONENT_NAME "QkNIXzIwNF8xMjhfMTBfZW5j"
+set_global_assignment -entity "BCH_204_128_10_enc" -library "BCH_204_128_10_enc" -name IP_COMPONENT_DISPLAY_NAME "QkNIXzIwNF8xMjhfMTBfZW5j"
+set_global_assignment -entity "BCH_204_128_10_enc" -library "BCH_204_128_10_enc" -name IP_COMPONENT_REPORT_HIERARCHY "On"
+set_global_assignment -entity "BCH_204_128_10_enc" -library "BCH_204_128_10_enc" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "BCH_204_128_10_enc" -library "BCH_204_128_10_enc" -name IP_COMPONENT_VERSION "MS4w"
+set_global_assignment -entity "BCH_204_128_10_enc" -library "BCH_204_128_10_enc" -name IP_COMPONENT_PARAMETER "QVVUT19HRU5FUkFUSU9OX0lE::MTYyMzEwNDI0MQ==::QXV0byBHRU5FUkFUSU9OX0lE"
+set_global_assignment -entity "BCH_204_128_10_enc" -library "BCH_204_128_10_enc" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0VfRkFNSUxZ::Q3ljbG9uZSBW::QXV0byBERVZJQ0VfRkFNSUxZ"
+set_global_assignment -entity "BCH_204_128_10_enc" -library "BCH_204_128_10_enc" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0U=::NUNTRU1BNUYzMUM2::QXV0byBERVZJQ0U="
+set_global_assignment -entity "BCH_204_128_10_enc" -library "BCH_204_128_10_enc" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0VfU1BFRURHUkFERQ==::Ng==::QXV0byBERVZJQ0VfU1BFRURHUkFERQ=="
+set_global_assignment -entity "BCH_204_128_10_enc" -library "BCH_204_128_10_enc" -name IP_COMPONENT_PARAMETER "QVVUT19DTEtfQ0xPQ0tfUkFURQ==::LTE=::QXV0byBDTE9DS19SQVRF"
+set_global_assignment -entity "BCH_204_128_10_enc" -library "BCH_204_128_10_enc" -name IP_COMPONENT_PARAMETER "QVVUT19DTEtfQ0xPQ0tfRE9NQUlO::LTE=::QXV0byBDTE9DS19ET01BSU4="
+set_global_assignment -entity "BCH_204_128_10_enc" -library "BCH_204_128_10_enc" -name IP_COMPONENT_PARAMETER "QVVUT19DTEtfUkVTRVRfRE9NQUlO::LTE=::QXV0byBSRVNFVF9ET01BSU4="
+set_global_assignment -entity "BCH_204_128_10_enc_bch_0" -library "BCH_204_128_10_enc" -name IP_COMPONENT_NAME "QkNIXzIwNF8xMjhfMTBfZW5jX2JjaF8w"
+set_global_assignment -entity "BCH_204_128_10_enc_bch_0" -library "BCH_204_128_10_enc" -name IP_COMPONENT_DISPLAY_NAME "QkNI"
+set_global_assignment -entity "BCH_204_128_10_enc_bch_0" -library "BCH_204_128_10_enc" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "BCH_204_128_10_enc_bch_0" -library "BCH_204_128_10_enc" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "BCH_204_128_10_enc_bch_0" -library "BCH_204_128_10_enc" -name IP_COMPONENT_AUTHOR "QWx0ZXJhIENvcnBvcmF0aW9u"
+set_global_assignment -entity "BCH_204_128_10_enc_bch_0" -library "BCH_204_128_10_enc" -name IP_COMPONENT_VERSION "MTYuMQ=="
+set_global_assignment -entity "BCH_204_128_10_enc_bch_0" -library "BCH_204_128_10_enc" -name IP_COMPONENT_DESCRIPTION "QWx0ZXJhIEJDSA=="
+set_global_assignment -entity "BCH_204_128_10_enc_bch_0" -library "BCH_204_128_10_enc" -name IP_COMPONENT_PARAMETER "ZGVzaWduX2Vudg==::TkFUSVZF::ZGVzaWduX2Vudg=="
+set_global_assignment -entity "BCH_204_128_10_enc_bch_0" -library "BCH_204_128_10_enc" -name IP_COMPONENT_PARAMETER "c2VsZWN0ZWRfZGV2aWNlX2ZhbWlseQ==::Q3ljbG9uZSBW::c2VsZWN0ZWRfZGV2aWNlX2ZhbWlseQ=="
+set_global_assignment -entity "BCH_204_128_10_enc_bch_0" -library "BCH_204_128_10_enc" -name IP_COMPONENT_PARAMETER "QkNI::RW5jb2Rlcg==::QkNIIG1vZHVsZQ=="
+set_global_assignment -entity "BCH_204_128_10_enc_bch_0" -library "BCH_204_128_10_enc" -name IP_COMPONENT_PARAMETER "TV9CSVRT::OA==::TnVtYmVyIG9mIGJpdHMgcGVyIHN5bWJvbCAobSk="
+set_global_assignment -entity "BCH_204_128_10_enc_bch_0" -library "BCH_204_128_10_enc" -name IP_COMPONENT_PARAMETER "Tl9CSVRT::MjA0::Q29kZXdvcmQgbGVuZ3RoIChuKQ=="
+set_global_assignment -entity "BCH_204_128_10_enc_bch_0" -library "BCH_204_128_10_enc" -name IP_COMPONENT_PARAMETER "VF9CSVRT::MTA=::RXJyb3IgY29ycmVjdGlvbiBjYXBhYmlsaXR5ICh0KQ=="
+set_global_assignment -entity "BCH_204_128_10_enc_bch_0" -library "BCH_204_128_10_enc" -name IP_COMPONENT_PARAMETER "UEFSSVRZX0JJVFM=::NzY=::UGFyaXR5IGJpdHM="
+set_global_assignment -entity "BCH_204_128_10_enc_bch_0" -library "BCH_204_128_10_enc" -name IP_COMPONENT_PARAMETER "S19CSVRT::MTI4::TWVzc2FnZSBsZW5ndGggKGsp"
+set_global_assignment -entity "BCH_204_128_10_enc_bch_0" -library "BCH_204_128_10_enc" -name IP_COMPONENT_PARAMETER "SVJSUE9M::Mjg1::UHJpbWl0aXZlIHBvbHlub21pYWw="
+set_global_assignment -entity "BCH_204_128_10_enc_bch_0" -library "BCH_204_128_10_enc" -name IP_COMPONENT_PARAMETER "REFUQV9XSURUSA==::OA==::UGFyYWxsZWwgaW5wdXQgZGF0YSB3aWR0aA=="
+
+set_global_assignment -library "BCH_204_128_10_enc" -name VERILOG_FILE [file join $::quartus(qip_path) "BCH_204_128_10_enc.v"]
+set_global_assignment -library "BCH_204_128_10_enc" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/bch_enc_package.vhd"]
+set_global_assignment -library "BCH_204_128_10_enc" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/bch_encoder_core.vhd"]
+set_global_assignment -library "BCH_204_128_10_enc" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/bch_encoder.vhd"]
+set_global_assignment -library "BCH_204_128_10_enc" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/bchp_decoder.ocp"]
+set_global_assignment -library "BCH_204_128_10_enc" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/bch_encoder.ocp"]
+set_global_assignment -library "BCH_204_128_10_enc" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/BCH_204_128_10_enc_bch_0.vhd"]
+
+set_global_assignment -entity "BCH_204_128_10_enc_bch_0" -library "BCH_204_128_10_enc" -name IP_TOOL_NAME "altera_bch"
+set_global_assignment -entity "BCH_204_128_10_enc_bch_0" -library "BCH_204_128_10_enc" -name IP_TOOL_VERSION "16.1"
+set_global_assignment -entity "BCH_204_128_10_enc_bch_0" -library "BCH_204_128_10_enc" -name IP_TOOL_ENV "Qsys"

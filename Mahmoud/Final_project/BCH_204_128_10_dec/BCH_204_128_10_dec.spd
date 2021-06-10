@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="simulation/submodules/mentor/bchp_functions.vhd"
+   type="VHDL_ENCRYPT"
+   library="bch_0"
+   simulator="modelsim" />
+ <file
+   path="simulation/submodules/aldec/bchp_functions.vhd"
+   type="VHDL_ENCRYPT"
+   library="bch_0"
+   simulator="riviera" />
+ <file
+   path="simulation/submodules/bchp_parameters.vhd"
+   type="VHDL"
+   library="bch_0" />
+ <file
+   path="simulation/submodules/bchp_roots.vhd"
+   type="VHDL"
+   library="bch_0" />
+ <file
+   path="simulation/submodules/mentor/rsp_gf_add.vhd"
+   type="VHDL_ENCRYPT"
+   library="bch_0"
+   simulator="modelsim" />
+ <file
+   path="simulation/submodules/aldec/rsp_gf_add.vhd"
+   type="VHDL_ENCRYPT"
+   library="bch_0"
+   simulator="riviera" />
+ <file
+   path="simulation/submodules/mentor/rsp_gf_sqrff.vhd"
+   type="VHDL_ENCRYPT"
+   library="bch_0"
+   simulator="modelsim" />
+ <file
+   path="simulation/submodules/aldec/rsp_gf_sqrff.vhd"
+   type="VHDL_ENCRYPT"
+   library="bch_0"
+   simulator="riviera" />
+ <file
+   path="simulation/submodules/mentor/rsp_gf_mr.vhd"
+   type="VHDL_ENCRYPT"
+   library="bch_0"
+   simulator="modelsim" />
+ <file
+   path="simulation/submodules/aldec/rsp_gf_mr.vhd"
+   type="VHDL_ENCRYPT"
+   library="bch_0"
+   simulator="riviera" />
+ <file
+   path="simulation/submodules/mentor/rsp_gf_mul.vhd"
+   type="VHDL_ENCRYPT"
+   library="bch_0"
+   simulator="modelsim" />
+ <file
+   path="simulation/submodules/aldec/rsp_gf_mul.vhd"
+   type="VHDL_ENCRYPT"
+   library="bch_0"
+   simulator="riviera" />
+ <file
+   path="simulation/submodules/mentor/rsp_gf_pp.vhd"
+   type="VHDL_ENCRYPT"
+   library="bch_0"
+   simulator="modelsim" />
+ <file
+   path="simulation/submodules/aldec/rsp_gf_pp.vhd"
+   type="VHDL_ENCRYPT"
+   library="bch_0"
+   simulator="riviera" />
+ <file
+   path="simulation/submodules/mentor/bchp_package.vhd"
+   type="VHDL_ENCRYPT"
+   library="bch_0"
+   simulator="modelsim" />
+ <file
+   path="simulation/submodules/aldec/bchp_package.vhd"
+   type="VHDL_ENCRYPT"
+   library="bch_0"
+   simulator="riviera" />
+ <file
+   path="simulation/submodules/mentor/bchp_syndromes_sqr.vhd"
+   type="VHDL_ENCRYPT"
+   library="bch_0"
+   simulator="modelsim" />
+ <file
+   path="simulation/submodules/aldec/bchp_syndromes_sqr.vhd"
+   type="VHDL_ENCRYPT"
+   library="bch_0"
+   simulator="riviera" />
+ <file
+   path="simulation/submodules/mentor/bchp_syndrome.vhd"
+   type="VHDL_ENCRYPT"
+   library="bch_0"
+   simulator="modelsim" />
+ <file
+   path="simulation/submodules/aldec/bchp_syndrome.vhd"
+   type="VHDL_ENCRYPT"
+   library="bch_0"
+   simulator="riviera" />
+ <file
+   path="simulation/submodules/mentor/bchp_rom.vhd"
+   type="VHDL_ENCRYPT"
+   library="bch_0"
+   simulator="modelsim" />
+ <file
+   path="simulation/submodules/aldec/bchp_rom.vhd"
+   type="VHDL_ENCRYPT"
+   library="bch_0"
+   simulator="riviera" />
+ <file
+   path="simulation/submodules/bchp_auto_package.vhd"
+   type="VHDL"
+   library="bch_0" />
+ <file
+   path="simulation/submodules/bchp_mb_system.vhd"
+   type="VHDL"
+   library="bch_0" />
+ <file
+   path="simulation/submodules/mentor/bchp_mbopt_pe6.vhd"
+   type="VHDL_ENCRYPT"
+   library="bch_0"
+   simulator="modelsim" />
+ <file
+   path="simulation/submodules/aldec/bchp_mbopt_pe6.vhd"
+   type="VHDL_ENCRYPT"
+   library="bch_0"
+   simulator="riviera" />
+ <file
+   path="simulation/submodules/mentor/bchp_mb_pex.vhd"
+   type="VHDL_ENCRYPT"
+   library="bch_0"
+   simulator="modelsim" />
+ <file
+   path="simulation/submodules/aldec/bchp_mb_pex.vhd"
+   type="VHDL_ENCRYPT"
+   library="bch_0"
+   simulator="riviera" />
+ <file
+   path="simulation/submodules/mentor/rsp_unary.vhd"
+   type="VHDL_ENCRYPT"
+   library="bch_0"
+   simulator="modelsim" />
+ <file
+   path="simulation/submodules/aldec/rsp_unary.vhd"
+   type="VHDL_ENCRYPT"
+   library="bch_0"
+   simulator="riviera" />
+ <file
+   path="simulation/submodules/mentor/bchp_search.vhd"
+   type="VHDL_ENCRYPT"
+   library="bch_0"
+   simulator="modelsim" />
+ <file
+   path="simulation/submodules/aldec/bchp_search.vhd"
+   type="VHDL_ENCRYPT"
+   library="bch_0"
+   simulator="riviera" />
+ <file
+   path="simulation/submodules/mentor/bchp_shift_search.vhd"
+   type="VHDL_ENCRYPT"
+   library="bch_0"
+   simulator="modelsim" />
+ <file
+   path="simulation/submodules/aldec/bchp_shift_search.vhd"
+   type="VHDL_ENCRYPT"
+   library="bch_0"
+   simulator="riviera" />
+ <file
+   path="simulation/submodules/mentor/bchp_shift_searches.vhd"
+   type="VHDL_ENCRYPT"
+   library="bch_0"
+   simulator="modelsim" />
+ <file
+   path="simulation/submodules/aldec/bchp_shift_searches.vhd"
+   type="VHDL_ENCRYPT"
+   library="bch_0"
+   simulator="riviera" />
+ <file
+   path="simulation/submodules/mentor/bchp_del.vhd"
+   type="VHDL_ENCRYPT"
+   library="bch_0"
+   simulator="modelsim" />
+ <file
+   path="simulation/submodules/aldec/bchp_del.vhd"
+   type="VHDL_ENCRYPT"
+   library="bch_0"
+   simulator="riviera" />
+ <file
+   path="simulation/submodules/bchp_invmem.hex"
+   type="HEX"
+   library="bch_0" />
+ <file
+   path="simulation/submodules/mentor/bchp_decoder_core.vhd"
+   type="VHDL_ENCRYPT"
+   library="bch_0"
+   simulator="modelsim" />
+ <file
+   path="simulation/submodules/aldec/bchp_decoder_core.vhd"
+   type="VHDL_ENCRYPT"
+   library="bch_0"
+   simulator="riviera" />
+ <file
+   path="simulation/submodules/mentor/bchp_decoder.vhd"
+   type="VHDL_ENCRYPT"
+   library="bch_0"
+   simulator="modelsim" />
+ <file
+   path="simulation/submodules/aldec/bchp_decoder.vhd"
+   type="VHDL_ENCRYPT"
+   library="bch_0"
+   simulator="riviera" />
+ <file path="simulation/submodules/top_dec.vhd" type="VHDL" library="bch_0" />
+ <file path="simulation/BCH_204_128_10_dec.v" type="VERILOG" />
+ <topLevel name="BCH_204_128_10_dec" />
+ <deviceFamily name="cyclonev" />
+</simPackage>

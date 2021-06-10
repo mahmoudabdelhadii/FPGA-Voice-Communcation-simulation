@@ -1,0 +1,74 @@
+set_global_assignment -entity "BCH_204_128_10_dec" -library "BCH_204_128_10_dec" -name IP_TOOL_NAME "Qsys"
+set_global_assignment -entity "BCH_204_128_10_dec" -library "BCH_204_128_10_dec" -name IP_TOOL_VERSION "16.1"
+set_global_assignment -entity "BCH_204_128_10_dec" -library "BCH_204_128_10_dec" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -library "BCH_204_128_10_dec" -name SOPCINFO_FILE [file join $::quartus(qip_path) "../../BCH_204_128_10_dec.sopcinfo"]
+set_global_assignment -entity "BCH_204_128_10_dec" -library "BCH_204_128_10_dec" -name SLD_INFO "QSYS_NAME BCH_204_128_10_dec HAS_SOPCINFO 1 GENERATION_ID 1623105273"
+set_global_assignment -library "BCH_204_128_10_dec" -name MISC_FILE [file join $::quartus(qip_path) "../BCH_204_128_10_dec.cmp"]
+set_global_assignment -library "BCH_204_128_10_dec" -name SLD_FILE [file join $::quartus(qip_path) "BCH_204_128_10_dec.debuginfo"]
+set_global_assignment -entity "BCH_204_128_10_dec" -library "BCH_204_128_10_dec" -name IP_TARGETED_DEVICE_FAMILY "Cyclone V"
+set_global_assignment -entity "BCH_204_128_10_dec" -library "BCH_204_128_10_dec" -name IP_GENERATED_DEVICE_FAMILY "{Cyclone V}"
+set_global_assignment -entity "BCH_204_128_10_dec" -library "BCH_204_128_10_dec" -name IP_QSYS_MODE "STANDALONE"
+set_global_assignment -name SYNTHESIS_ONLY_QIP ON
+set_global_assignment -library "BCH_204_128_10_dec" -name MISC_FILE [file join $::quartus(qip_path) "../../BCH_204_128_10_dec.qsys"]
+set_global_assignment -entity "BCH_204_128_10_dec" -library "BCH_204_128_10_dec" -name IP_COMPONENT_NAME "QkNIXzIwNF8xMjhfMTBfZGVj"
+set_global_assignment -entity "BCH_204_128_10_dec" -library "BCH_204_128_10_dec" -name IP_COMPONENT_DISPLAY_NAME "QkNIXzIwNF8xMjhfMTBfZGVj"
+set_global_assignment -entity "BCH_204_128_10_dec" -library "BCH_204_128_10_dec" -name IP_COMPONENT_REPORT_HIERARCHY "On"
+set_global_assignment -entity "BCH_204_128_10_dec" -library "BCH_204_128_10_dec" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "BCH_204_128_10_dec" -library "BCH_204_128_10_dec" -name IP_COMPONENT_VERSION "MS4w"
+set_global_assignment -entity "BCH_204_128_10_dec" -library "BCH_204_128_10_dec" -name IP_COMPONENT_PARAMETER "QVVUT19HRU5FUkFUSU9OX0lE::MTYyMzEwNTI3Mw==::QXV0byBHRU5FUkFUSU9OX0lE"
+set_global_assignment -entity "BCH_204_128_10_dec" -library "BCH_204_128_10_dec" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0VfRkFNSUxZ::Q3ljbG9uZSBW::QXV0byBERVZJQ0VfRkFNSUxZ"
+set_global_assignment -entity "BCH_204_128_10_dec" -library "BCH_204_128_10_dec" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0U=::NUNTRU1BNUYzMUM2::QXV0byBERVZJQ0U="
+set_global_assignment -entity "BCH_204_128_10_dec" -library "BCH_204_128_10_dec" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0VfU1BFRURHUkFERQ==::Ng==::QXV0byBERVZJQ0VfU1BFRURHUkFERQ=="
+set_global_assignment -entity "BCH_204_128_10_dec" -library "BCH_204_128_10_dec" -name IP_COMPONENT_PARAMETER "QVVUT19DTEtfQ0xPQ0tfUkFURQ==::LTE=::QXV0byBDTE9DS19SQVRF"
+set_global_assignment -entity "BCH_204_128_10_dec" -library "BCH_204_128_10_dec" -name IP_COMPONENT_PARAMETER "QVVUT19DTEtfQ0xPQ0tfRE9NQUlO::LTE=::QXV0byBDTE9DS19ET01BSU4="
+set_global_assignment -entity "BCH_204_128_10_dec" -library "BCH_204_128_10_dec" -name IP_COMPONENT_PARAMETER "QVVUT19DTEtfUkVTRVRfRE9NQUlO::LTE=::QXV0byBSRVNFVF9ET01BSU4="
+set_global_assignment -entity "BCH_204_128_10_dec_bch_0" -library "BCH_204_128_10_dec" -name IP_COMPONENT_NAME "QkNIXzIwNF8xMjhfMTBfZGVjX2JjaF8w"
+set_global_assignment -entity "BCH_204_128_10_dec_bch_0" -library "BCH_204_128_10_dec" -name IP_COMPONENT_DISPLAY_NAME "QkNI"
+set_global_assignment -entity "BCH_204_128_10_dec_bch_0" -library "BCH_204_128_10_dec" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "BCH_204_128_10_dec_bch_0" -library "BCH_204_128_10_dec" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "BCH_204_128_10_dec_bch_0" -library "BCH_204_128_10_dec" -name IP_COMPONENT_AUTHOR "QWx0ZXJhIENvcnBvcmF0aW9u"
+set_global_assignment -entity "BCH_204_128_10_dec_bch_0" -library "BCH_204_128_10_dec" -name IP_COMPONENT_VERSION "MTYuMQ=="
+set_global_assignment -entity "BCH_204_128_10_dec_bch_0" -library "BCH_204_128_10_dec" -name IP_COMPONENT_DESCRIPTION "QWx0ZXJhIEJDSA=="
+set_global_assignment -entity "BCH_204_128_10_dec_bch_0" -library "BCH_204_128_10_dec" -name IP_COMPONENT_PARAMETER "ZGVzaWduX2Vudg==::TkFUSVZF::ZGVzaWduX2Vudg=="
+set_global_assignment -entity "BCH_204_128_10_dec_bch_0" -library "BCH_204_128_10_dec" -name IP_COMPONENT_PARAMETER "c2VsZWN0ZWRfZGV2aWNlX2ZhbWlseQ==::Q3ljbG9uZSBW::c2VsZWN0ZWRfZGV2aWNlX2ZhbWlseQ=="
+set_global_assignment -entity "BCH_204_128_10_dec_bch_0" -library "BCH_204_128_10_dec" -name IP_COMPONENT_PARAMETER "QkNI::RGVjb2Rlcg==::QkNIIG1vZHVsZQ=="
+set_global_assignment -entity "BCH_204_128_10_dec_bch_0" -library "BCH_204_128_10_dec" -name IP_COMPONENT_PARAMETER "TV9CSVRT::OA==::TnVtYmVyIG9mIGJpdHMgcGVyIHN5bWJvbCAobSk="
+set_global_assignment -entity "BCH_204_128_10_dec_bch_0" -library "BCH_204_128_10_dec" -name IP_COMPONENT_PARAMETER "Tl9CSVRT::MjA0::Q29kZXdvcmQgbGVuZ3RoIChuKQ=="
+set_global_assignment -entity "BCH_204_128_10_dec_bch_0" -library "BCH_204_128_10_dec" -name IP_COMPONENT_PARAMETER "VF9CSVRT::MTA=::RXJyb3IgY29ycmVjdGlvbiBjYXBhYmlsaXR5ICh0KQ=="
+set_global_assignment -entity "BCH_204_128_10_dec_bch_0" -library "BCH_204_128_10_dec" -name IP_COMPONENT_PARAMETER "UEFSSVRZX0JJVFM=::NzY=::UGFyaXR5IGJpdHM="
+set_global_assignment -entity "BCH_204_128_10_dec_bch_0" -library "BCH_204_128_10_dec" -name IP_COMPONENT_PARAMETER "S19CSVRT::MTI4::TWVzc2FnZSBsZW5ndGggKGsp"
+set_global_assignment -entity "BCH_204_128_10_dec_bch_0" -library "BCH_204_128_10_dec" -name IP_COMPONENT_PARAMETER "SVJSUE9M::Mjg1::UHJpbWl0aXZlIHBvbHlub21pYWw="
+set_global_assignment -entity "BCH_204_128_10_dec_bch_0" -library "BCH_204_128_10_dec" -name IP_COMPONENT_PARAMETER "REFUQV9XSURUSA==::OA==::UGFyYWxsZWwgaW5wdXQgZGF0YSB3aWR0aA=="
+
+set_global_assignment -library "BCH_204_128_10_dec" -name VERILOG_FILE [file join $::quartus(qip_path) "BCH_204_128_10_dec.v"]
+set_global_assignment -library "BCH_204_128_10_dec" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/bchp_functions.vhd"]
+set_global_assignment -library "BCH_204_128_10_dec" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/bchp_parameters.vhd"]
+set_global_assignment -library "BCH_204_128_10_dec" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/bchp_roots.vhd"]
+set_global_assignment -library "BCH_204_128_10_dec" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/rsp_gf_add.vhd"]
+set_global_assignment -library "BCH_204_128_10_dec" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/rsp_gf_sqrff.vhd"]
+set_global_assignment -library "BCH_204_128_10_dec" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/rsp_gf_mr.vhd"]
+set_global_assignment -library "BCH_204_128_10_dec" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/rsp_gf_mul.vhd"]
+set_global_assignment -library "BCH_204_128_10_dec" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/rsp_gf_pp.vhd"]
+set_global_assignment -library "BCH_204_128_10_dec" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/bchp_package.vhd"]
+set_global_assignment -library "BCH_204_128_10_dec" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/bchp_syndromes_sqr.vhd"]
+set_global_assignment -library "BCH_204_128_10_dec" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/bchp_syndrome.vhd"]
+set_global_assignment -library "BCH_204_128_10_dec" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/bchp_rom.vhd"]
+set_global_assignment -library "BCH_204_128_10_dec" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/bchp_auto_package.vhd"]
+set_global_assignment -library "BCH_204_128_10_dec" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/bchp_mb_system.vhd"]
+set_global_assignment -library "BCH_204_128_10_dec" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/bchp_mbopt_pe6.vhd"]
+set_global_assignment -library "BCH_204_128_10_dec" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/bchp_mb_pex.vhd"]
+set_global_assignment -library "BCH_204_128_10_dec" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/rsp_unary.vhd"]
+set_global_assignment -library "BCH_204_128_10_dec" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/bchp_search.vhd"]
+set_global_assignment -library "BCH_204_128_10_dec" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/bchp_shift_search.vhd"]
+set_global_assignment -library "BCH_204_128_10_dec" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/bchp_shift_searches.vhd"]
+set_global_assignment -library "BCH_204_128_10_dec" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/bchp_del.vhd"]
+set_global_assignment -library "BCH_204_128_10_dec" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/bchp_invmem.hex"]
+set_global_assignment -library "BCH_204_128_10_dec" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/bchp_decoder_core.vhd"]
+set_global_assignment -library "BCH_204_128_10_dec" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/bchp_decoder.vhd"]
+set_global_assignment -library "BCH_204_128_10_dec" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/bchp_decoder.ocp"]
+set_global_assignment -library "BCH_204_128_10_dec" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/bch_encoder.ocp"]
+set_global_assignment -library "BCH_204_128_10_dec" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/BCH_204_128_10_dec_bch_0.vhd"]
+
+set_global_assignment -entity "BCH_204_128_10_dec_bch_0" -library "BCH_204_128_10_dec" -name IP_TOOL_NAME "altera_bch"
+set_global_assignment -entity "BCH_204_128_10_dec_bch_0" -library "BCH_204_128_10_dec" -name IP_TOOL_VERSION "16.1"
+set_global_assignment -entity "BCH_204_128_10_dec_bch_0" -library "BCH_204_128_10_dec" -name IP_TOOL_ENV "Qsys"

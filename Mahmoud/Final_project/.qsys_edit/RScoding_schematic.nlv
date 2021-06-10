@@ -1,0 +1,12 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst unsaved.highspeed_rs_0.clk_rst -pg 1
+preplace inst unsaved.highspeed_rs_0.decoder -pg 1
+preplace inst unsaved.highspeed_rs_0 -pg 1 -lvl 1 -y 50
+preplace inst unsaved -pg 1 -lvl 1 -y 40 -regy -20
+preplace netloc EXPORT<net_container>unsaved</net_container>(SLAVE)unsaved.clk,(SLAVE)highspeed_rs_0.clk) 1 0 1 NJ
+preplace netloc EXPORT<net_container>unsaved</net_container>(SLAVE)unsaved.in,(SLAVE)highspeed_rs_0.in) 1 0 1 NJ
+preplace netloc EXPORT<net_container>unsaved</net_container>(SLAVE)unsaved.reset,(SLAVE)highspeed_rs_0.reset) 1 0 1 NJ
+preplace netloc EXPORT<net_container>unsaved</net_container>(SLAVE)unsaved.out,(SLAVE)highspeed_rs_0.out) 1 0 1 NJ
+levelinfo -pg 1 0 50 230
+levelinfo -hier unsaved 60 120 220
