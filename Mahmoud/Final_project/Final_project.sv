@@ -233,7 +233,7 @@ logic pause,start;
     .edge_clk(start_compenc)
     );
 
-	logic finish_compenc,finish_compdec;
+	logic finish_compenc,finish_compdec,ready_compdec;
 	logic [7:0] data_out_compenc;
 	logic [13:0] data_out_compdec;
   //encoding
@@ -247,20 +247,33 @@ logic pause,start;
     //decoding
     ulaw_decomp decompression(
       .clk(CLK_50M),
-      .start(finish_compenc), 
+      .start(valid_out_BCH_dec), 
       .enc_in(data_out_BCH_dec), 
       .dec_out(data_out_compdec),
-      .finish(finish_compdec)
+      .finish(finish_compdec),
+      .ready(ready_compdec)
       );
       /////////////////compression encoding/decoding //////////////////////////
-
+logic ready_BCH_enc,sop_in_BCH_enc,eop_in_BCH_enc,valid_out_BCH_enc,finish_BCH_enc,load_BCH_enc;
+logic [7:0] data_out_BCH_enc;
+logic sop_out_BCH_enc,eop_out_BCH_enc,ready_BCH_dec;
       /////////////////error encoding/decoding //////////////////////////
-      
+      BCH_enc_controller  BCH_cont (
+        .clk        (CLK_50M),
+        .reset      (reset),
+        .sop_in     (sop_in_BCH_enc),
+        .eop_in     (eop_in_BCH_enc),
+        .ready      (ready_BCH_enc),
+        .load       (load_BCH_enc),
+        .valid_out  (valid_out_BCH_enc), 
+        .start      (finish_compenc),
+        .finish     (finish_BCH_enc)
+        );
 //encoding 
       BCH_204_128_10_enc ERROR_ENC (
         .clk        (CLK_50M),        // clk.clk
         .reset      (~reset),      // rst.reset
-        .load       (finish_compenc),       //  in.valid
+        .load       (load_BCH_enc),       //  in.valid
         .ready      (ready_BCH_enc),      //    .ready
         .sop_in     (sop_in_BCH_enc),     //    .startofpacket //should probably come from flash reader
         .eop_in     (eop_in_BCH_enc),     //    .endofpacket //should probably come from flash reader
@@ -275,7 +288,9 @@ logic pause,start;
     );
 
     //decoding
-
+logic [7:0] data_out_BCH_dec;
+logic valid_out_BCH_dec,sop_out_BCH_dec,eop_out_BCH_dec;
+logic [7:0]number_errors_BCH_dec;
     BCH_204_128_10_dec ERROR_DEC (
       .clk        (CLK_50M),        // clk.clk
       .reset      (~reset),      // rst.reset
@@ -285,7 +300,7 @@ logic pause,start;
       .eop_in        (eop_out_BCH_enc),        //    .endofpacket
       .data_in       (data_out_BCH_enc),       //    .data_in
       .valid_out     (valid_out_BCH_dec),     // out.valid
-      .sink_ready    (1'b1),    //    .ready
+      .sink_ready    (ready_compdec),    //    .ready
       .sop_out       (sop_out_BCH_dec),       //    .startofpacket
       .eop_out       (eop_out_BCH_dec),       //    .endofpacket
       .data_out      (data_out_BCH_dec),      //    .data_out
@@ -294,6 +309,12 @@ logic pause,start;
   
   
       /////////////////error encoding/decoding //////////////////////////
+ carrier_freq 900MHZ_carrier(
+     .refclk(CLOCK3_50),   //  refclk.clk
+      .rst(reset),      //   reset.reset
+     .outclk_0(CLOCK_900), // outclk0.clk
+     .locked()    //  locked.export
+    );
 
 
 /////////////////final project code here//////////////////////////
@@ -338,8 +359,8 @@ SevenSegmentDisplayDecoder U17(HEX5, inHEX5);
   assign inHEX1 = audio_data[7:4];
   assign inHEX2 = audio_data[11:8];
   assign inHEX3 = audio_data[15:12];
-  assign inHEX4 = write;
-  assign inHEX5 = write_ready;
+  assign inHEX4 = number_errors_BCH_dec[3:0];
+  assign inHEX5 = number_errors_BCH_dec[7:4];
   
 
 
