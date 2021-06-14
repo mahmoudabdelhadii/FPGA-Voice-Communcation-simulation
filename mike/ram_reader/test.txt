@@ -1,0 +1,2 @@
+Welcome to the message sending demonstr@t!0n using text files. 
+We can send ascii characters using 8 bits!
