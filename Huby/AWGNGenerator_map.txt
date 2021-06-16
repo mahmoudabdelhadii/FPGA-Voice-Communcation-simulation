@@ -1,0 +1,23 @@
+HDLAWGNGenerator/AWGNGenerator/ dBtoLinearConverter --> alphadBtoLinearConverter
+HDLAWGNGenerator/AWGNGenerator/GaussianNoiseWithReqVar --> GaussianNoiseWithReqVar
+HDLAWGNGenerator/AWGNGenerator/GaussianNoiseWithUnitVar/SinCos/Sine HDL Optimized1 --> Sine_HDL_Optimized1
+HDLAWGNGenerator/AWGNGenerator/GaussianNoiseWithUnitVar/SinCos/Sine HDL Optimized2 --> Sine_HDL_Optimized2
+HDLAWGNGenerator/AWGNGenerator/GaussianNoiseWithUnitVar/SinCos --> SinCos
+HDLAWGNGenerator/AWGNGenerator/GaussianNoiseWithUnitVar/SqrtImplementation/SqrtEval/FunctionEvaluation --> FunctionEvaluation
+HDLAWGNGenerator/AWGNGenerator/GaussianNoiseWithUnitVar/SqrtImplementation/SqrtEval/RangeReconstruction --> RangeReconstruction
+HDLAWGNGenerator/AWGNGenerator/GaussianNoiseWithUnitVar/SqrtImplementation/SqrtEval/RangeReduction/MATLAB Function --> MATLAB_Function
+HDLAWGNGenerator/AWGNGenerator/GaussianNoiseWithUnitVar/SqrtImplementation/SqrtEval/RangeReduction --> RangeReduction
+HDLAWGNGenerator/AWGNGenerator/GaussianNoiseWithUnitVar/SqrtImplementation/SqrtEval --> SqrtEval
+HDLAWGNGenerator/AWGNGenerator/GaussianNoiseWithUnitVar/SqrtImplementation --> SqrtImplementation
+HDLAWGNGenerator/AWGNGenerator/GaussianNoiseWithUnitVar/TausUniformRandGen/ConcatandExtract --> ConcatandExtract
+HDLAWGNGenerator/AWGNGenerator/GaussianNoiseWithUnitVar/TausUniformRandGen/TausURNG1 --> TausURNG1
+HDLAWGNGenerator/AWGNGenerator/GaussianNoiseWithUnitVar/TausUniformRandGen/TausURNG2 --> TausURNG2
+HDLAWGNGenerator/AWGNGenerator/GaussianNoiseWithUnitVar/TausUniformRandGen --> TausUniformRandGen
+HDLAWGNGenerator/AWGNGenerator/GaussianNoiseWithUnitVar/logImplementation/log/FunctionEvaluation --> FunctionEvaluation_block
+HDLAWGNGenerator/AWGNGenerator/GaussianNoiseWithUnitVar/logImplementation/log/RangeReconstruction --> RangeReconstruction_block
+HDLAWGNGenerator/AWGNGenerator/GaussianNoiseWithUnitVar/logImplementation/log/RangeReduction/MATLAB Function --> MATLAB_Function_block
+HDLAWGNGenerator/AWGNGenerator/GaussianNoiseWithUnitVar/logImplementation/log/RangeReduction --> RangeReduction_block
+HDLAWGNGenerator/AWGNGenerator/GaussianNoiseWithUnitVar/logImplementation/log --> log
+HDLAWGNGenerator/AWGNGenerator/GaussianNoiseWithUnitVar/logImplementation --> logImplementation
+HDLAWGNGenerator/AWGNGenerator/GaussianNoiseWithUnitVar --> GaussianNoiseWithUnitVar
+HDLAWGNGenerator/AWGNGenerator --> AWGNGenerator
