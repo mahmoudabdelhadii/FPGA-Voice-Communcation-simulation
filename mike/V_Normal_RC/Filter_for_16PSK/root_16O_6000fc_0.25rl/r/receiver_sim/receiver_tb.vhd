@@ -17,11 +17,11 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 use std.textio.all;
 library work;
-entity transmitter_tb is
+entity receiver_tb is
 
 
-    constant FIR_INPUT_FILE_c         : string := "transmitter_input.txt";
-    constant FIR_OUTPUT_FILE_c        : string := "transmitter_output.txt";
+    constant FIR_INPUT_FILE_c         : string := "receiver_input.txt";
+    constant FIR_OUTPUT_FILE_c        : string := "receiver_output.txt";
 
 
     constant PHYSCHANIN_c             : natural := 1;
@@ -39,7 +39,7 @@ entity transmitter_tb is
     constant TDM_FACTOR_c             : natural := 1042;
     constant INVERSE_TDM_FACTOR_c     : natural := 1;
     constant INVALID_CYCLES_c         : natural := 1041;
-    constant INTERP_FACTOR_c          : natural := 8;
+    constant INTERP_FACTOR_c          : natural := 1;
     constant TOTAL_INCHANS_ALLOWED    : natural := PHYSCHANIN_c * CHANSPERPHYIN_c;
     constant TOTAL_OUTCHANS_ALLOWED   : natural := PHYSCHANOUT_c * CHANSPERPHYOUT_c;
     constant NUM_OF_TAPS_c            : natural := 17;
@@ -48,10 +48,10 @@ entity transmitter_tb is
     constant COEFF_BUS_DATA_WIDTH_c   : natural := 16;
     constant COEFF_BUS_ADDR_WIDTH   : natural := 3;
 
-end entity transmitter_tb;
+end entity receiver_tb;
 
 
-architecture rtl of transmitter_tb is
+architecture rtl of receiver_tb is
 
 
     signal ast_sink_data      : std_logic_vector (DATA_WIDTH_c-1 downto 0) := (others => '0');
@@ -140,7 +140,7 @@ architecture rtl of transmitter_tb is
 begin
 
 
-DUT : entity work.transmitter
+DUT : entity work.receiver
 port map (
     clk                => clk,
     reset_n            => reset_design,

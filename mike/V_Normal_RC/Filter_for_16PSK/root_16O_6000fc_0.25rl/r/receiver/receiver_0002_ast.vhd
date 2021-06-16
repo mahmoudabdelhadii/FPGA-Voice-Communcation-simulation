@@ -6,12 +6,12 @@ use ieee.numeric_std.all;
 use work.auk_dspip_lib_pkg_hpfir.all;
 use work.auk_dspip_math_pkg_hpfir.all;
 
-entity transmitter_0002_ast is
+entity receiver_0002_ast is
   generic (
         INWIDTH             : integer := 32;
-        OUT_WIDTH_UNTRIMMED : integer := 43;
+        OUT_WIDTH_UNTRIMMED : integer := 46;
         BANKINWIDTH         : integer := 0;
-        REM_LSB_BIT_g       : integer := 11;
+        REM_LSB_BIT_g       : integer := 14;
         REM_LSB_TYPE_g      : string := "trunc";
         REM_MSB_BIT_g       : integer := 0;
         REM_MSB_TYPE_g      : string := "trunc";
@@ -19,7 +19,7 @@ entity transmitter_0002_ast is
         PHYSCHANOUT         : integer := 1;
         CHANSPERPHYIN       : natural := 1;
         CHANSPERPHYOUT      : natural := 1;
-        OUTPUTFIFODEPTH     : integer := 32;
+        OUTPUTFIFODEPTH     : integer := 4;
         USE_PACKETS         : integer := 0;
         MODE_WIDTH         : integer := 0;
         ENABLE_BACKPRESSURE : boolean := false;
@@ -46,13 +46,13 @@ entity transmitter_0002_ast is
     ast_source_error   : out std_logic_vector (1 downto 0)
     );
 attribute altera_attribute : string;
-attribute altera_attribute of transmitter_0002_ast:entity is "-name MESSAGE_DISABLE 15400; -name MESSAGE_DISABLE 14130; -name MESSAGE_DISABLE 12020; -name MESSAGE_DISABLE 12030; -name MESSAGE_DISABLE 12010; -name MESSAGE_DISABLE 12110; -name MESSAGE_DISABLE 14320; -name MESSAGE_DISABLE 13410; -name MESSAGE_DISABLE 10036";
-end transmitter_0002_ast;
+attribute altera_attribute of receiver_0002_ast:entity is "-name MESSAGE_DISABLE 15400; -name MESSAGE_DISABLE 14130; -name MESSAGE_DISABLE 12020; -name MESSAGE_DISABLE 12030; -name MESSAGE_DISABLE 12010; -name MESSAGE_DISABLE 12110; -name MESSAGE_DISABLE 14320; -name MESSAGE_DISABLE 13410; -name MESSAGE_DISABLE 10036";
+end receiver_0002_ast;
 
 -- Warnings Suppression On
 -- altera message_off 10036
 
-architecture struct of transmitter_0002_ast is
+architecture struct of receiver_0002_ast is
   
   constant OUTWIDTH          : integer   := OUT_WIDTH_UNTRIMMED - REM_LSB_BIT_g - REM_MSB_BIT_g;
 
@@ -190,18 +190,18 @@ begin
 
 real_passthrough : if COMPLEX_CONST = 1 generate
 
-      component transmitter_0002_rtl_core is
+      component receiver_0002_rtl_core is
       port (
         xIn_v                 : in std_logic_vector(0 downto 0);
         xIn_c                 : in std_logic_vector(7 downto 0);
         xIn_0                : in std_logic_vector(32 - 1 downto 0);
         xOut_v               : out std_logic_vector(0 downto 0);
         xOut_c               : out std_logic_vector(7 downto 0);
-        xOut_0              : out std_logic_vector(43- 1 downto 0);
+        xOut_0              : out std_logic_vector(46- 1 downto 0);
         clk                  : in std_logic;
         areset               : in std_logic
         );
-end component transmitter_0002_rtl_core;
+end component receiver_0002_rtl_core;
 
 
     --Complex data re-ordering
@@ -215,14 +215,14 @@ end component transmitter_0002_rtl_core;
 
 
   begin
-        hpfircore_core: transmitter_0002_rtl_core
+        hpfircore_core: receiver_0002_rtl_core
            port map (
             xIn_v     => data_valid_core,
             xIn_c     => "00000000",
             xIn_0     => data_in_core((0 + 32) * 0 + 32 - 1 downto (0 + 32) * 0),
             xOut_v    => core_out_valid_core,
             xOut_c    => core_out_channel_core,
-            xOut_0   => core_out_core(43* 0 + 43- 1 downto 43* 0),
+            xOut_0   => core_out_core(46* 0 + 46- 1 downto 46* 0),
             clk       => clk,
             areset    => reset_fir
         );

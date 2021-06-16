@@ -9,9 +9,9 @@ use work.auk_dspip_math_pkg_hpfir.all;
 entity transmitter_ast is
   generic (
         INWIDTH             : integer := 32;
-        OUT_WIDTH_UNTRIMMED : integer := 44;
+        OUT_WIDTH_UNTRIMMED : integer := 43;
         BANKINWIDTH         : integer := 0;
-        REM_LSB_BIT_g       : integer := 12;
+        REM_LSB_BIT_g       : integer := 11;
         REM_LSB_TYPE_g      : string := "trunc";
         REM_MSB_BIT_g       : integer := 0;
         REM_MSB_TYPE_g      : string := "trunc";
@@ -197,7 +197,7 @@ real_passthrough : if COMPLEX_CONST = 1 generate
         xIn_0                : in std_logic_vector(32 - 1 downto 0);
         xOut_v               : out std_logic_vector(0 downto 0);
         xOut_c               : out std_logic_vector(7 downto 0);
-        xOut_0              : out std_logic_vector(44- 1 downto 0);
+        xOut_0              : out std_logic_vector(43- 1 downto 0);
         clk                  : in std_logic;
         areset               : in std_logic
         );
@@ -222,7 +222,7 @@ end component transmitter_rtl_core;
             xIn_0     => data_in_core((0 + 32) * 0 + 32 - 1 downto (0 + 32) * 0),
             xOut_v    => core_out_valid_core,
             xOut_c    => core_out_channel_core,
-            xOut_0   => core_out_core(44* 0 + 44- 1 downto 44* 0),
+            xOut_0   => core_out_core(43* 0 + 43- 1 downto 43* 0),
             clk       => clk,
             areset    => reset_fir
         );

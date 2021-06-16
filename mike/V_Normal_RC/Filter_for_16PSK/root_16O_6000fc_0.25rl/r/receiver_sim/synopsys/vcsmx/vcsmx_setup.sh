@@ -12,7 +12,7 @@
 # or its authorized distributors. Please refer to the applicable 
 # agreement for further details.
 
-# ACDS 18.1 625 win32 2021.06.15.20:01:53
+# ACDS 18.1 625 win32 2021.06.15.19:58:03
 
 # ----------------------------------------
 # vcsmx - auto-generated simulation script
@@ -20,7 +20,7 @@
 # ----------------------------------------
 # This script provides commands to simulate the following IP detected in
 # your Quartus project:
-#     transmitter
+#     receiver
 # 
 # Altera recommends that you source this Quartus-generated IP simulation
 # script from your own customized top-level script, and avoid editing this
@@ -96,7 +96,7 @@
 # 
 # IP SIMULATION SCRIPT
 # ----------------------------------------
-# If transmitter is one of several IP cores in your
+# If receiver is one of several IP cores in your
 # Quartus project, you can generate a simulation script
 # suitable for inclusion in your top-level simulation
 # script by running the following command line:
@@ -107,10 +107,10 @@
 # within the Quartus project, and generate a unified
 # script which supports all the Altera IP within the design.
 # ----------------------------------------
-# ACDS 18.1 625 win32 2021.06.15.20:01:53
+# ACDS 18.1 625 win32 2021.06.15.19:58:03
 # ----------------------------------------
 # initialize variables
-TOP_LEVEL_NAME="transmitter"
+TOP_LEVEL_NAME="receiver"
 QSYS_SIMDIR="./../../"
 QUARTUS_INSTALL_DIR="C:/nasty/quartus/quartus/"
 SKIP_FILE_COPY=0
@@ -211,10 +211,10 @@ if [ $SKIP_COM -eq 0 ]; then
   vhdlan -xlrm $USER_DEFINED_VHDL_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS   "$QSYS_SIMDIR/auk_dspip_avalon_streaming_source_hpfir.vhd"    
   vhdlan -xlrm $USER_DEFINED_VHDL_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS   "$QSYS_SIMDIR/auk_dspip_roundsat_hpfir.vhd"                   
   vlogan +v2k $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/altera_avalon_sc_fifo.v"                        
-  vhdlan -xlrm $USER_DEFINED_VHDL_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS   "$QSYS_SIMDIR/transmitter_rtl_core.vhd"                       
-  vhdlan -xlrm $USER_DEFINED_VHDL_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS   "$QSYS_SIMDIR/transmitter_ast.vhd"                            
-  vhdlan -xlrm $USER_DEFINED_VHDL_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS   "$QSYS_SIMDIR/transmitter.vhd"                                
-  vhdlan -xlrm $USER_DEFINED_VHDL_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS   "$QSYS_SIMDIR/transmitter_tb.vhd"                             
+  vhdlan -xlrm $USER_DEFINED_VHDL_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS   "$QSYS_SIMDIR/receiver_rtl_core.vhd"                          
+  vhdlan -xlrm $USER_DEFINED_VHDL_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS   "$QSYS_SIMDIR/receiver_ast.vhd"                               
+  vhdlan -xlrm $USER_DEFINED_VHDL_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS   "$QSYS_SIMDIR/receiver.vhd"                                   
+  vhdlan -xlrm $USER_DEFINED_VHDL_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS   "$QSYS_SIMDIR/receiver_tb.vhd"                                
 fi
 
 # ----------------------------------------

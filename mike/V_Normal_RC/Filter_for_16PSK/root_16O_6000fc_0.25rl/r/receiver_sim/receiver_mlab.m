@@ -11,19 +11,19 @@
 
 %FILTER PARAMETER
 %Input Data Width: 32
-%Interpolation Factor: 8
-%Decimation Factor: 1
+%Interpolation Factor: 1
+%Decimation Factor: 8
 %FIR Width (Full Calculation Width Before Output Width Adjust) :32
 %-----------------------------------------------------------------------------------------------------------
 %MegaWizard Scaled Coefficient Values
 
-function  output = transmitter_mlab(stimulation, bank);
+function  output = receiver_mlab(stimulation, bank);
  coef_matrix_in= [0,0,-5,-14,-7,39,126,216,255,216,126,39,-7,-14,-5,0,0];
- INTER_FACTOR = 8;
- DECI_FACTOR  = 1;
+ INTER_FACTOR  = 1;
+ DECI_FACTOR  =  8;
  MSB_RM  = 0;
  MSB_TYPE  = 0;
- LSB_RM  = 11;
+ LSB_RM  = 14;
  LSB_TYPE  = 0;
  FIR_WIDTH  = 32 + MSB_RM + LSB_RM;
  OUT_WIDTH  = 32 ;  %32
