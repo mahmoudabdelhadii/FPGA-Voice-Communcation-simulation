@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file path="receiver_sim/dspba_library_package.vhd" type="VHDL" />
+ <file path="receiver_sim/dspba_library.vhd" type="VHDL" />
+ <file path="receiver_sim/auk_dspip_math_pkg_hpfir.vhd" type="VHDL" />
+ <file path="receiver_sim/auk_dspip_lib_pkg_hpfir.vhd" type="VHDL" />
+ <file
+   path="receiver_sim/auk_dspip_avalon_streaming_controller_hpfir.vhd"
+   type="VHDL" />
+ <file
+   path="receiver_sim/auk_dspip_avalon_streaming_sink_hpfir.vhd"
+   type="VHDL" />
+ <file
+   path="receiver_sim/auk_dspip_avalon_streaming_source_hpfir.vhd"
+   type="VHDL" />
+ <file path="receiver_sim/auk_dspip_roundsat_hpfir.vhd" type="VHDL" />
+ <file path="receiver_sim/altera_avalon_sc_fifo.v" type="VERILOG" />
+ <file path="receiver_sim/receiver_rtl_core.vhd" type="VHDL" />
+ <file path="receiver_sim/receiver_ast.vhd" type="VHDL" />
+ <file path="receiver_sim/receiver.vhd" type="VHDL" />
+ <file path="receiver_sim/receiver_nativelink.tcl" type="OTHER" />
+ <file path="receiver_sim/receiver_msim.tcl" type="OTHER" />
+ <file path="receiver_sim/receiver_tb.vhd" type="VHDL" />
+ <file path="receiver_sim/receiver_mlab.m" type="OTHER" />
+ <file path="receiver_sim/receiver_model.m" type="OTHER" />
+ <file path="receiver_sim/receiver_coef_int.txt" type="OTHER" />
+ <file path="receiver_sim/receiver_input.txt" type="OTHER" />
+ <file path="receiver_sim/receiver_param.txt" type="OTHER" />
+ <topLevel name="receiver" />
+ <deviceFamily name="cyclonev" />
+</simPackage>
